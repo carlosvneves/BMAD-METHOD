@@ -1,0 +1,10 @@
+# <!-- Powered by BMAD™ Core -->
+name: bmad-brazilian-antitrust-analytics
+version: 1.0.0
+short-title: Brazilian Data-Driven Antitrust Analytics Pack
+description: >-
+  Comprehensive investigation pack for data-driven antitrust analysis including cartel detection, 
+  algorithmic collusion, tacit collusion in private markets, and public procurement investigations 
+  with expertise in Brazilian competition law, advanced ML, and network analysis
+author: Carlos Neves (Antitrust Analytics Focus)
+slashPrefix: antitrust

@@ -1,0 +1,22 @@
+# <!-- Powered by BMAD™ Core -->
+bundle:
+  name: Brazilian Public Procurement Cartel Investigation Team
+  icon: 🧠
+  description: Specialized team for investigating cartels in Brazilian public procurement with expertise in bidding analysis, procurement data processing, legal framework (Lei 14.133/2021), and AI-powered screening systems.
+agents:
+  - enhanced-analyst
+  - data-scientist
+  - econometrician
+  - ai-ml-integration-specialist
+  - antitrust-legal-counsel
+  - bmad-orchestrator
+  - architect
+  - dev
+  - qa
+workflows:
+  - procurement-cartel-investigation.yaml
+  - licitacao-bidding-analysis.yaml
+  - brazilian-merger-analysis.yaml
+  - procurement-ai-screening-workflow.yaml
+  - brazilian-market-analysis.yaml
+  - antitrust-legal-review-workflow.yaml

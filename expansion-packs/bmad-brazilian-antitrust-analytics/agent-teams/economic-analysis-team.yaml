@@ -1,0 +1,14 @@
+# <!-- Powered by BMAD™ Core -->
+bundle:
+  name: Brazilian Market Analysis & Cartel Detection Team
+  icon: 📈
+  description: Specialized team for Brazilian market analysis, cartel detection, and economic impact assessment in public procurement.
+agents:
+  - enhanced-analyst
+  - econometrician
+  - bmad-orchestrator
+  - qa
+workflows:
+  - brazilian-market-analysis.yaml
+  - procurement-cartel-detection.yaml
+  - economic-impact-assessment.yaml

@@ -1,0 +1,15 @@
+# <!-- Powered by BMAD™ Core -->
+bundle:
+  name: CADE Investigation AI & Cartel Detection Team
+  icon: 🤖
+  description: Specialized team for CADE investigation automation, AI-powered cartel detection, and advanced ML system deployment for Brazilian public procurement.
+agents:
+  - data-scientist
+  - ai-ml-integration-specialist
+  - architect
+  - dev
+  - qa
+workflows:
+  - procurement-ai-screening-workflow.yaml
+  - gnn-cartel-detection-workflow.yaml
+  - cade-investigation-automation.yaml

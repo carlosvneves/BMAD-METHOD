@@ -1,0 +1,147 @@
+# <!-- Powered by BMAD™ Core -->
+workflow:
+  name: Automated Reporting & Review Workflow
+  description: End-to-end automated reporting workflow with AI-enhanced insights, validation, and review automation
+  version: 1.0.0
+  icon: 🔄
+
+stages:
+  - name: Data Collection & Processing
+    description: Automated data ingestion and preparation
+    agents:
+      - data-scientist
+      - ai-ml-integration-specialist
+    tasks:
+      - automated-data-ingestion
+      - data-quality-validation
+      - data-transformation
+    deliverables:
+      - Processed datasets
+      - Data quality reports
+      - Validation logs
+    
+  - name: Analysis & Processing
+    description: Automated statistical analysis and ML processing
+    agents:
+      - data-scientist
+      - econometrician
+    tasks:
+      - automated-statistical-analysis
+      - ml-model-execution
+      - trend-analysis
+      - anomaly-detection
+    deliverables:
+      - Analysis results
+      - Model predictions
+      - Anomaly reports
+    
+  - name: Report Generation
+    description: AI-powered report creation and formatting
+    agents:
+      - enhanced-analyst
+      - data-scientist
+    tasks:
+      - generate-executive-summary
+      - create-visualizations
+      - generate-insights
+      - format-report
+    deliverables:
+      - Complete reports
+      - Interactive dashboards
+      - Executive summaries
+    
+  - name: Automated Review & Validation
+    description: Comprehensive automated quality assurance
+    agents:
+      - ai-ml-integration-specialist
+      - qa
+    tasks:
+      - automated-quality-checks
+      - statistical-validation
+      - methodology-review
+      - compliance-checking
+    deliverables:
+      - Validation reports
+      - Quality scores
+      - Compliance certificates
+    
+  - name: Distribution & Monitoring
+    description: Automated report distribution and system monitoring
+    agents:
+      - ai-ml-integration-specialist
+      - enhanced-analyst
+    tasks:
+      - automated-distribution
+      - stakeholder-notification
+      - system-monitoring
+      - performance-tracking
+    deliverables:
+      - Distributed reports
+      - Monitoring dashboards
+      - Performance metrics
+    
+  - name: Continuous Improvement
+    description: Automated optimization and improvement
+    agents:
+      - data-scientist
+      - ai-ml-integration-specialist
+    tasks:
+      - performance-analysis
+      - user-feedback-collection
+      - system-optimization
+      - model-retraining
+    deliverables:
+      - Optimization reports
+      - Improvement recommendations
+      - Updated models
+
+automation_features:
+  real_time_processing:
+    enabled: true
+    description: Real-time data processing and report generation
+  
+  ai_enhanced_insights:
+    enabled: true
+    description: AI-powered insight generation and recommendations
+  
+  automated_review:
+    enabled: true
+    description: Automated quality review and validation
+  
+  intelligent_scheduling:
+    enabled: true
+    description: Smart scheduling based on data availability and business needs
+  
+  predictive_alerting:
+    enabled: true
+    description: Predictive alerting for potential issues
+
+quality_gates:
+  - name: Data Quality Gate
+    criteria: "data_quality_score >= 0.9"
+    action: "proceed_to_analysis"
+    failure_action: "flag_data_issues"
+  
+  - name: Analysis Validation Gate
+    criteria: "statistical_validation_passed = true"
+    action: "generate_report"
+    failure_action: "request_manual_review"
+  
+  - name: Report Quality Gate
+    criteria: "report_quality_score >= 0.85"
+    action: "distribute_report"
+    failure_action: "hold_for_review"
+
+notifications:
+  success:
+    channels: ["email", "slack"]
+    recipients: ["stakeholders@company.com", "#reports"]
+  
+  failure:
+    channels: ["email", "sms", "slack"]
+    recipients: ["support_team@company.com", "#alerts"]
+    escalation: true
+  
+  review_required:
+    channels: ["email", "teams"]
+    recipients: ["review_team@company.com"]
