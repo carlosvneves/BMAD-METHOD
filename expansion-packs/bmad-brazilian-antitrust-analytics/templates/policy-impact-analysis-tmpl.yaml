@@ -1,0 +1,796 @@
+# Template de Análise de Impacto de Política
+# Para Avaliação de Políticas Econômicas Brasileiras
+
+template_info:
+  name: "Policy Impact Analysis Template"
+  version: "1.0"
+  author: "Econometrician Agent - Brazilian Antitrust Analytics"
+  description: "Template para análise abrangente de impacto de políticas com foco brasileiro"
+  language: "pt-BR"
+  created_date: "2024-01-01"
+  last_updated: "2024-01-01"
+
+# Metadados da Análise
+analysis_metadata:
+  title: "[Título da Análise de Política]"
+  subtitle: "[Subtítulo com Contexto Brasileiro]"
+  authors: "[Autores/Instituições]"
+  organization: "[Organização Responsável]"
+  date: "[Data de Conclusão]"
+  analysis_id: "[ID da Análise]"
+  version: "[Versão]"
+  classification: "[Classificação - Confidencial, Público, etc.]"
+
+# Resumo Executivo
+executive_summary:
+  policy_overview:
+    policy_name: "[Nome da Política]"
+    implementation_date: "[Data de Implementação]"
+    responsible_authority: "[Autoridade Responsável]"
+    policy_objective: "[Objetivo Principal da Política]"
+
+  key_findings:
+    finding_1:
+      description: "[Descoberta Principal 1]"
+      magnitude: "[Magnitude do Impacto]"
+      statistical_significance: "[Significância Estatística]"
+      confidence_level: "[Nível de Confiança]"
+
+    finding_2:
+      description: "[Descoberta Principal 2]"
+      magnitude: "[Magnitude do Impacto]"
+      statistical_significance: "[Significância Estatística]"
+      confidence_level: "[Nível de Confiança]"
+
+  overall_assessment:
+    effectiveness_rating: "[Classificação de Efetividade]"
+    efficiency_rating: "[Classificação de Eficiência]"
+    equity_rating: "[Classificação de Equidade]"
+    sustainability_rating: "[Classificação de Sustentabilidade]"
+
+  key_recommendations:
+    immediate_actions:
+      - action: "[Ação Imediata 1]"
+        priority: "[Prioridade]"
+        timeline: "[Cronograma]"
+
+    long_term_reforms:
+      - reform: "[Reforma de Longo Prazo 1]"
+        priority: "[Prioridade]"
+        timeline: "[Cronograma]"
+
+# Contexto da Política
+policy_context:
+  background_and_rationale:
+    problem_identification: "[Identificação do Problema]"
+    policy_origins: "[Origens da Política]"
+    theoretical_justification: "[Justificativa Teórica]"
+    stakeholder_consultation: "[Consulta aos Stakeholders]"
+
+  brazilian_institutional_context:
+    legal_framework:
+      primary_legislation: "[Legislação Primária]"
+      secondary_regulations: "[Regulamentações Secundárias]"
+      constitutional_basis: "[Base Constitucional]"
+
+    implementing_authorities:
+      lead_authority: "[Autoridade Líder]"
+      supporting_authorities:
+        - authority: "[Autoridade de Apoio 1]"
+          role: "[Papel]"
+
+        - authority: "[Autoridade de Apoio 2]"
+          role: "[Papel]"
+
+    coordination_mechanisms:
+      interagency_coordination: "[Coordenação Interagencial]"
+      stakeholder_engagement: "[Engajamento dos Stakeholders]"
+      public_consultation: "[Consulta Pública]"
+
+  policy_design:
+    policy_instruments:
+      instrument_1:
+        type: "[Tipo de Instrumento - Regulatório, Fiscal, etc.]"
+        description: "[Descrição]"
+        target_group: "[Grupo Alvo]"
+        implementation_mechanism: "[Mecanismo de Implementação]"
+
+      instrument_2:
+        type: "[Tipo de Instrumento]"
+        description: "[Descrição]"
+        target_group: "[Grupo Alvo]"
+        implementation_mechanism: "[Mecanismo de Implementação]"
+
+    timeline_and_phasing:
+      implementation_phases:
+        - phase: "[Fase 1]"
+          start_date: "[Data de Início]"
+          end_date: "[Data de Término]"
+          key_activities: "[Atividades Principais]"
+
+        - phase: "[Fase 2]"
+          start_date: "[Data de Início]"
+          end_date: "[Data de Término]"
+          key_activities: "[Atividades Principais]"
+
+    budget_and_resources:
+      total_budget: "[Orçamento Total]"
+      funding_sources:
+        - source: "[Fonte de Financiamento 1]"
+          amount: "[Valor]"
+          percentage: "[Porcentagem]"
+
+        - source: "[Fonte de Financiamento 2]"
+          amount: "[Valor]"
+          percentage: "[Porcentagem]"
+
+      human_resources:
+        fte_positions: "[Número de Posições]"
+        skills_required: "[Habilidades Necessárias]"
+
+# Metodologia de Avaliação
+evaluation_methodology:
+  evaluation_framework:
+    evaluation_questions:
+      - question: "[Pergunta de Avaliação 1]"
+        relevance: "[Relevância]"
+
+      - question: "[Pergunta de Avaliação 2]"
+        relevance: "[Relevância]"
+
+    evaluation_criteria:
+      criterion_1:
+        name: "[Critério 1 - Efetividade]"
+        definition: "[Definição]"
+        measurement_approach: "[Abordagem de Medição]"
+
+      criterion_2:
+        name: "[Critério 2 - Eficiência]"
+        definition: "[Definição]"
+        measurement_approach: "[Abordagem de Medição]"
+
+      criterion_3:
+        name: "[Critério 3 - Equidade]"
+        definition: "[Definição]"
+        measurement_approach: "[Abordagem de Medição]"
+
+  counterfactual_analysis:
+    identification_strategy:
+      chosen_method: "[Método Escolhido]"
+      justification: "[Justificativa]"
+
+    comparison_groups:
+      treatment_group:
+        definition: "[Definição do Grupo de Tratamento]"
+        size: "[Tamanho]"
+        selection_criteria: "[Critérios de Seleção]"
+
+      control_group:
+        definition: "[Definição do Grupo de Controle]"
+        size: "[Tamanho]"
+        selection_criteria: "[Critérios de Seleção]"
+
+    validity_threats:
+      threat_1:
+        description: "[Descrição da Ameaça 1]"
+        severity: "[Severidade]"
+        mitigation_strategy: "[Estratégia de Mitigação]"
+
+      threat_2:
+        description: "[Descrição da Ameaça 2]"
+        severity: "[Severidade]"
+        mitigation_strategy: "[Estratégia de Mitigação]"
+
+  data_and_measurement:
+    outcome_indicators:
+      primary_outcomes:
+        - indicator: "[Indicador de Outcome Primário 1]"
+          definition: "[Definição]"
+          data_source: "[Fonte de Dados]"
+          measurement_frequency: "[Frequência de Medição]"
+
+        - indicator: "[Indicador de Outcome Primário 2]"
+          definition: "[Definição]"
+          data_source: "[Fonte de Dados]"
+          measurement_frequency: "[Frequência de Medição]"
+
+      secondary_outcomes:
+        - indicator: "[Indicador de Outcome Secundário 1]"
+          definition: "[Definição]"
+          data_source: "[Fonte de Dados]"
+          measurement_frequency: "[Frequência de Medição]"
+
+    process_indicators:
+      implementation_indicators:
+        - indicator: "[Indicador de Implementação 1]"
+          definition: "[Definição]"
+          target: "[Meta]"
+          actual: "[Real]"
+
+        - indicator: "[Indicador de Implementação 2]"
+          definition: "[Definição]"
+          target: "[Meta]"
+          actual: "[Real]"
+
+      output_indicators:
+        - indicator: "[Indicador de Output 1]"
+          definition: "[Definição]"
+          target: "[Meta]"
+          actual: "[Real]"
+
+# Análise de Impacto
+impact_analysis:
+  overall_impact:
+    primary_findings:
+      finding_1:
+        outcome: "[Outcome 1]"
+        impact_estimate: "[Estimativa de Impacto]"
+        confidence_interval: "[Intervalo de Confiança 95%]"
+        statistical_significance: "[Significância Estatística]"
+        economic_significance: "[Significância Econômica]"
+
+      finding_2:
+        outcome: "[Outcome 2]"
+        impact_estimate: "[Estimativa de Impacto]"
+        confidence_interval: "[Intervalo de Confiança 95%]"
+        statistical_significance: "[Significância Estatística]"
+        economic_significance: "[Significância Econômica]"
+
+    impact_summary:
+      overall_effectiveness: "[Efetividade Geral]"
+      key_success_factors: "[Fatores de Sucesso Principais]"
+      major_challenges: "[Desafios Principais]"
+      unintended_consequences: "[Consequências Não Intencionais]"
+
+  distributional_analysis:
+    geographic_distribution:
+      region_1:
+        name: "[Região 1]"
+        impact_estimate: "[Estimativa de Impacto]"
+        statistical_significance: "[Significância]"
+        interpretation: "[Interpretação]"
+
+      region_2:
+        name: "[Região 2]"
+        impact_estimate: "[Estimativa de Impacto]"
+        statistical_significance: "[Significância]"
+        interpretation: "[Interpretação]"
+
+    sectoral_distribution:
+      sector_1:
+        name: "[Setor 1]"
+        impact_estimate: "[Estimativa de Impacto]"
+        statistical_significance: "[Significância]"
+        interpretation: "[Interpretação]"
+
+      sector_2:
+        name: "[Setor 2]"
+        impact_estimate: "[Estimativa de Impacto]"
+        statistical_significance: "[Significância]"
+        interpretation: "[Interpretação]"
+
+    demographic_distribution:
+      income_groups:
+        group_1:
+          name: "[Grupo de Renda 1]"
+          impact_estimate: "[Estimativa de Impacto]"
+          interpretation: "[Interpretação]"
+
+        group_2:
+          name: "[Grupo de Renda 2]"
+          impact_estimate: "[Estimativa de Impacto]"
+          interpretation: "[Interpretação]"
+
+  temporal_dynamics:
+    short_term_effects:
+      period: "[Período de Curto Prazo]"
+      impact_estimate: "[Estimativa de Impacto]"
+      statistical_significance: "[Significância]"
+      interpretation: "[Interpretação]"
+
+    medium_term_effects:
+      period: "[Período de Médio Prazo]"
+      impact_estimate: "[Estimativa de Impacto]"
+        statistical_significance: "[Significância]"
+        interpretation: "[Interpretação]"
+
+    long_term_projections:
+      period: "[Período de Longo Prazo]"
+      projected_impact: "[Impacto Projetado]"
+      assumptions: "[Suposições]"
+      uncertainty_range: "[Intervalo de Incerteza]"
+
+# Análise Custo-Benefício
+cost_benefit_analysis:
+  cost_analysis:
+    direct_costs:
+      implementation_costs:
+        cost_item_1:
+          description: "[Item de Custo 1]"
+          amount: "[Valor]"
+          year: "[Ano]"
+          source: "[Fonte]"
+
+        cost_item_2:
+          description: "[Item de Custo 2]"
+          amount: "[Valor]"
+          year: "[Ano]"
+          source: "[Fonte]"
+
+      operational_costs:
+        cost_item_1:
+          description: "[Item de Custo Operacional 1]"
+          annual_amount: "[Valor Anual]"
+          duration: "[Duração]"
+          source: "[Fonte]"
+
+    indirect_costs:
+      economic_disruptions:
+        description: "[Descrição de Disrupções Econômicas]"
+        estimated_cost: "[Custo Estimado]"
+        methodology: "[Metodologia]"
+
+      administrative_burdens:
+        description: "[Descrição de Cargas Administrativas]"
+        estimated_cost: "[Custo Estimado]"
+        methodology: "[Metodologia]"
+
+    total_costs:
+      present_value: "[Valor Presente]"
+      annual_equivalent: "[Equivalente Anual]"
+      per_capita: "[Per Capita]"
+
+  benefit_analysis:
+    direct_benefits:
+      efficiency_gains:
+        description: "[Descrição de Ganhos de Eficiência]"
+        estimated_value: "[Valor Estimado]"
+        methodology: "[Metodologia]"
+
+      revenue_increases:
+        description: "[Descrição de Aumentos de Receita]"
+        estimated_value: "[Valor Estimado]"
+        methodology: "[Metodologia]"
+
+    indirect_benefits:
+      social_benefits:
+        description: "[Descrição de Benefícios Sociais]"
+        estimated_value: "[Valor Estimado]"
+        methodology: "[Metodologia]"
+
+      environmental_benefits:
+        description: "[Descrição de Benefícios Ambientais]"
+        estimated_value: "[Valor Estimado]"
+        methodology: "[Metodologia]"
+
+    total_benefits:
+      present_value: "[Valor Presente]"
+      annual_equivalent: "[Equivalente Anual]"
+      per_capita: "[Per Capita]"
+
+  economic_metrics:
+    net_present_value: "[Valor Presente Líquido]"
+    benefit_cost_ratio: "[Razão Custo-Benefício]"
+    internal_rate_of_return: "[Taxa Interna de Retorno]"
+    payback_period: "[Período de Retorno]"
+
+  sensitivity_analysis:
+    scenario_analysis:
+      baseline_scenario:
+        description: "[Descrição do Cenário Base]"
+        npv: "[VPL]"
+        bcr: "[RCB]"
+
+      optimistic_scenario:
+        description: "[Descrição do Cenário Otimista]"
+        npv: "[VPL]"
+        bcr: "[RCB]"
+
+      pessimistic_scenario:
+        description: "[Descrição do Cenário Pessimista]"
+        npv: "[VPL]"
+        bcr: "[RCB]"
+
+    parameter_sensitivity:
+      parameter_1:
+        name: "[Parâmetro 1]"
+        baseline_value: "[Valor Base]"
+        sensitivity_range: "[Intervalo de Sensibilidade]"
+        impact_on_results: "[Impacto nos Resultados]"
+
+# Implementação em R (Preferencial)
+r_implementation:
+  required_packages:
+    - "tidyverse"
+    - "lubridate"
+    - "AER"
+    - "did"
+    - "fixest"
+    - "synth"
+    - "rdrobust"
+    - "MatchIt"
+    - "sandwich"
+    - "lmtest"
+    "ivreg"
+
+  data_preparation_code: |
+    # Policy impact analysis - Brazilian context
+    library(tidyverse)
+    library(lubridate)
+
+    # Load policy evaluation data
+    policy_data <- read_csv("data/brazilian_policy_evaluation.csv") %>%
+      mutate(
+        date = ymd(date),
+        year = year(date),
+        month = month(date),
+        quarter = quarter(date),
+
+        # Create treatment indicators
+        policy_date = as.Date("[Data de Implementação da Política]"),
+        post_policy = date >= policy_date,
+        treatment = if_else(unit_id %in% treated_units, 1, 0),
+        treated_post = treatment * post_policy,
+
+        # Brazilian-specific controls
+        region = factor(region),
+        state = factor(state),
+        municipality = factor(municipality),
+
+        # Macroeconomic controls
+        gdp_growth = get_brazilian_gdp_growth(date),
+        inflation_rate = get_brazilian_inflation(date),
+        selic_rate = get_brazilian_selic_rate(date),
+        exchange_rate = get_brazilian_exchange_rate(date),
+
+        # Time relative to policy
+        months_to_policy = as.numeric(date - policy_date) / 30,
+        years_to_policy = months_to_policy / 12
+      ) %>%
+      filter(!is.na(main_outcome))
+
+  impact_estimation_code: |
+    # Main impact estimation - Difference-in-Differences
+    library(fixest)
+    library(did)
+
+    # Primary DiD model with cluster-robust standard errors
+    main_did_model <- feols(
+      main_outcome ~ treated_post + gdp_growth + inflation_rate + exchange_rate |
+      unit_id + year + quarter,
+      data = policy_data,
+      vcov = ~unit_id
+    )
+
+    # Event study for dynamic effects
+    event_study_model <- feols(
+      main_outcome ~ treated_post + months_to_policy + I(months_to_policy^2) +
+        gdp_growth + inflation_rate + exchange_rate |
+      unit_id + year + quarter,
+      data = policy_data,
+      vcov = ~unit_id
+    )
+
+    # Using the did package for advanced DiD
+    did_results <- att_gt(
+      yname = "main_outcome",
+      gname = "treatment",
+      tname = "date",
+      data = policy_data,
+      control_group = "notyettreated",
+      bstrap = TRUE,
+      cband = TRUE
+    )
+
+    # Aggregate event study results
+    event_study <- aggte(did_results, type = "dynamic")
+
+  heterogeneity_analysis_code: |
+    # Heterogeneity analysis by region
+    regional_effects <- policy_data %>%
+      group_by(region) %>%
+      group_modify(~ {
+        feols(main_outcome ~ treated_post + controls | unit_id + year,
+              data = .x,
+              vcov = ~unit_id)
+      })
+
+    # Heterogeneity by sector
+    sectoral_effects <- policy_data %>%
+      group_by(sector) %>%
+      group_modify(~ {
+        feols(main_outcome ~ treated_post + controls | unit_id + year,
+              data = .x,
+              vcov = ~unit_id)
+      })
+
+    # Heterogeneity by firm size
+    size_effects <- policy_data %>%
+      mutate(size_category = case_when(
+        employment < 10 ~ "micro",
+        employment < 50 ~ "small",
+        employment < 250 ~ "medium",
+        TRUE ~ "large"
+      )) %>%
+      group_by(size_category) %>%
+      group_modify(~ {
+        feols(main_outcome ~ treated_post + controls | unit_id + year,
+              data = .x,
+              vcov = ~unit_id)
+      })
+
+  cost_benefit_code: |
+    # Cost-benefit analysis implementation
+    calculate_npv <- function(cash_flows, discount_rate) {
+      npv <- 0
+      for (i in seq_along(cash_flows)) {
+        npv <- npv + cash_flows[i] / (1 + discount_rate)^i
+      }
+      return(npv)
+    }
+
+    calculate_bcr <- function(benefits, costs, discount_rate) {
+      npv_benefits <- calculate_npv(benefits, discount_rate)
+      npv_costs <- calculate_npv(costs, discount_rate)
+      return(npv_benefits / npv_costs)
+    }
+
+    # Brazilian-specific discount rate
+    brazilian_discount_rate <- 0.05  # 5% typical for Brazilian public projects
+
+    # Project cash flows
+    years <- 0:10  # 10-year projection
+    annual_benefits <- c(0, rep(baseline_annual_benefit, length(years) - 1))
+    annual_costs <- c(initial_investment, rep(annual_operating_cost, length(years) - 1))
+
+    # Calculate metrics
+    npv <- calculate_npv(annual_benefits - annual_costs, brazilian_discount_rate)
+    bcr <- calculate_bcr(annual_benefits, annual_costs, brazilian_discount_rate)
+
+    # Sensitivity analysis
+    discount_rates <- c(0.03, 0.05, 0.07, 0.10)
+    sensitivity_results <- data.frame(
+      discount_rate = discount_rates,
+      npv = sapply(discount_rates, function(dr) {
+        calculate_npv(annual_benefits - annual_costs, dr)
+      }),
+      bcr = sapply(discount_rates, function(dr) {
+        calculate_bcr(annual_benefits, annual_costs, dr)
+      })
+    )
+
+  visualization_code: |
+    # Create impact visualizations
+    library(ggplot2)
+    library(plotly)
+
+    # Main impact visualization
+    impact_plot <- ggplot(policy_data, aes(x = date, y = main_outcome, color = treatment)) +
+      geom_line(size = 1) +
+      geom_vline(xintercept = as.Date("[Data de Implementação da Política]"),
+                linetype = "dashed", color = "red") +
+      labs(title = "Impacto da Política - Evolução Temporal",
+           x = "Data", y = "[Variável de Outcome]",
+           color = "Grupo",
+           subtitle = "Linha vermelha indica implementação da política") +
+      theme_minimal()
+
+    # Event study visualization
+    event_study_plot <- ggplot(event_study_data, aes(x = time_to_event, y = estimate)) +
+      geom_point(size = 3) +
+      geom_errorbar(aes(ymin = lower_ci, ymax = upper_ci), width = 0.3) +
+      geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+      labs(title = "Análise de Eventos - Efeitos Dinâmicos",
+           x = "Meses Relativos à Política",
+           y = "Efeito Estimado") +
+      theme_minimal()
+
+    # Cost-benefit visualization
+    cb_plot <- ggplot(sensitivity_results, aes(x = discount_rate, y = npv)) +
+      geom_line(size = 2, color = "blue") +
+      geom_point(size = 3) +
+      geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+      labs(title = "Análise de Sensibilidade - VPL por Taxa de Desconto",
+           x = "Taxa de Desconto",
+           y = "Valor Presente Líquido (R$ milhões)") +
+      theme_minimal()
+
+  robustness_checks_code: |
+    # Robustness checks
+    # Alternative specifications
+    robustness_models <- list(
+      baseline = main_did_model,
+      log_linear = feols(log(main_outcome) ~ treated_post + controls | unit_id + year,
+                        data = policy_data),
+      state_trends = feols(main_outcome ~ treated_post + controls | unit_id + year + unit:year,
+                           data = policy_data),
+      with_macro_controls = feols(main_outcome ~ treated_post + gdp_growth + inflation_rate +
+                                  exchange_rate + unemployment_rate | unit_id + year,
+                                  data = policy_data)
+    )
+
+    # Placebo tests
+    placebo_dates <- seq(min(policy_data$date), max(policy_data$date), by = "6 months")
+    placebo_results <- list()
+
+    for (placebo_date in placebo_dates) {
+      placebo_data <- policy_data
+      placebo_data$placebo_treatment <- if_else(
+        placebo_data$date >= placebo_date & placebo_data$treatment == 1,
+        1, 0
+      )
+
+      placebo_model <- feols(
+        main_outcome ~ placebo_treatment + controls | unit_id + year,
+        data = placebo_data,
+        vcov = ~unit_id
+      )
+
+      placebo_results[[as.character(placebo_date)]] <- placebo_model
+    }
+
+    # Sample splitting validation
+    sample_splits <- list(
+      first_half = policy_data %>% filter(year <= median_year),
+      second_half = policy_data %>% filter(year > median_year),
+      pre_crisis = policy_data %>% filter(year < 2008),
+      post_crisis = policy_data %>% filter(year >= 2008)
+    )
+
+    split_results <- lapply(sample_splits, function(sample_data) {
+      feols(main_outcome ~ treated_post + controls | unit_id + year,
+            data = sample_data,
+            vcov = ~unit_id)
+    })
+
+# Resultados e Conclusões
+results_conclusions:
+  key_findings:
+    effectiveness:
+      overall_rating: "[Classificação Geral de Efetividade]"
+      evidence: "[Evidência de Apoio]"
+      confidence_level: "[Nível de Confiança]"
+
+    efficiency:
+      overall_rating: "[Classificação Geral de Eficiência]"
+      evidence: "[Evidência de Apoio]"
+      confidence_level: "[Nível de Confiança]"
+
+    equity:
+      overall_rating: "[Classificação Geral de Equidade]"
+      evidence: "[Evidência de Apoio]"
+      confidence_level: "[Nível de Confiança]"
+
+  lessons_learned:
+    successful_elements:
+      element_1:
+        description: "[Elemento de Sucesso 1]"
+        contributing_factors: "[Fatores Contribuintes]"
+        transferability: "[Transferabilidade]"
+
+      element_2:
+        description: "[Elemento de Sucesso 2]"
+        contributing_factors: "[Fatores Contribuintes]"
+        transferability: "[Transferabilidade]"
+
+    challenges_obstacles:
+      challenge_1:
+        description: "[Desafio 1]"
+        impact: "[Impacto]"
+        mitigation_successful: "[Mitigação Bem-sucedida?]"
+
+      challenge_2:
+        description: "[Desafio 2]"
+        impact: "[Impacto]"
+        mitigation_successful: "[Mitigação Bem-sucedida?]"
+
+  unintended_consequences:
+    positive_externalities:
+      externality_1:
+        description: "[Externalidade Positiva 1]"
+        magnitude: "[Magnitude]"
+        beneficiaries: "[Beneficiários]"
+
+      externality_2:
+        description: "[Externalidade Positiva 2]"
+        magnitude: "[Magnitude]"
+        beneficiaries: "[Beneficiários]"
+
+    negative_externalities:
+      externality_1:
+        description: "[Externalidade Negativa 1]"
+        magnitude: "[Magnitude]"
+        affected_groups: "[Grupos Afetados]"
+
+      externality_2:
+        description: "[Externalidade Negativa 2]"
+        magnitude: "[Magnitude]"
+        affected_groups: "[Grupos Afetados]"
+
+# Recomendações
+recommendations:
+  immediate_actions:
+    action_1:
+      description: "[Descrição da Ação Imediata 1]"
+      responsible_authority: "[Autoridade Responsável]"
+      timeline: "[Cronograma]"
+      resources_required: "[Recursos Necessários]"
+      expected_impact: "[Impacto Esperado]"
+
+    action_2:
+      description: "[Descrição da Ação Imediata 2]"
+      responsible_authority: "[Autoridade Responsável]"
+      timeline: "[Cronograma]"
+      resources_required: "[Recursos Necessários]"
+      expected_impact: "[Impacto Esperado]"
+
+  policy_modifications:
+    modification_1:
+      current_design: "[Design Atual]"
+      proposed_change: "[Mudança Proposta]"
+      rationale: "[Racional]"
+      expected_improvement: "[Melhoria Esperada]"
+      implementation_challenges: "[Desafios de Implementação]"
+
+    modification_2:
+      current_design: "[Design Atual]"
+      proposed_change: "[Mudança Proposta]"
+      rationale: "[Racional]"
+      expected_improvement: "[Melhoria Esperada]"
+      implementation_challenges: "[Desafios de Implementação]"
+
+  future_research:
+    research_question_1:
+      question: "[Pergunta de Pesquisa 1]"
+      rationale: "[Racional]"
+      methodology: "[Metodologia]"
+      timeline: "[Cronograma]"
+
+    research_question_2:
+      question: "[Pergunta de Pesquisa 2]"
+      rationale: "[Racional]"
+      methodology: "[Metodologia]"
+      timeline: "[Cronograma]"
+
+# Apêndice Técnico
+technical_appendix:
+  detailed_methodology:
+    econometric_models: "[Modelos Econométricos Detalhados]"
+    identification_strategies: "[Estratégias de Identificação]"
+    robustness_checks: "[Verificações de Robustez]"
+
+  data_appendix:
+    data_dictionary: "[Dicionário de Dados]"
+    variable_construction: "[Construção de Variáveis]"
+    missing_data_analysis: "[Análise de Dados Faltantes]"
+
+  sensitivity_analysis_appendix:
+    alternative_specifications: "[Especificações Alternativas]"
+    sample_selection_analysis: "[Análise de Seleção Amostral]"
+    assumption_testing: "[Testes de Suposições]"
+
+  code_appendix:
+    r_scripts: "[Scripts R Completo com Comentários em Inglês]"
+    data_processing: "[Código de Processamento]"
+    analysis_code: "[Código de Análise]"
+    visualization_code: "[Código de Visualização]"
+
+---
+# Instruções de Uso
+
+## Como Utilizar Este Template
+
+1. **Preencha os campos entre colchetes** `[ ]` com informações específicas
+2. **Use R como linguagem preferencial** para implementação de análise de impacto
+3. **Mantenha comentários em inglês** no código fonte
+4. **Forneça relatórios em português brasileiro**
+5. **Inclua análise custo-benefício completa** com múltiplos cenários
+6. **Considere o contexto institucional brasileiro** na análise
+
+## Padrões Técnicos
+
+- **Linguagem:** Português para relatórios, inglês para código
+- **Software:** R preferencialmente para métodos econométricos
+- **Validação:** Múltiplos métodos e análise de sensibilidade
+- **Documentação:** Código reprodutível e documentação completa
+- **Contexto:** Análise adaptada ao contexto brasileiro específico

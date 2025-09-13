@@ -1,0 +1,710 @@
+# Template de Estudo de Inferência Causal
+# Para Avaliação de Políticas Econômicas Brasileiras
+
+template_info:
+  name: "Causal Inference Study Template"
+  version: "1.0"
+  author: "Econometrician Agent - Brazilian Antitrust Analytics"
+  description: "Template para estudos de inferência causal com foco em políticas brasileiras"
+  language: "pt-BR"
+  created_date: "2024-01-01"
+  last_updated: "2024-01-01"
+
+# Metadados do Estudo
+study_metadata:
+  title: "[Título do Estudo Causal]"
+  subtitle: "[Subtítulo com Contexto Brasileiro]"
+  authors: "[Autores/Instituições]"
+  date: "[Data de Conclusão]"
+  study_id: "[ID do Estudo]"
+  version: "[Versão]"
+  confidentiality: "[Nível de Confidencialidade]"
+  funding: "[Fonte de Financiamento]"
+
+# Resumo Executivo
+executive_summary:
+  research_question: "[Pergunta de Pesquisa Causal]"
+  key_findings:
+    - finding: "[Descoberta Principal 1]"
+      magnitude: "[Magnitude do Efeito]"
+      significance: "[Significância Estatística]"
+
+    - finding: "[Descoberta Principal 2]"
+      magnitude: "[Magnitude do Efeito]"
+      significance: "[Significância Estatística]"
+
+  policy_implications:
+    immediate_actions: "[Ações Imediatas Sugeridas]"
+    long_term_reforms: "[Reformas de Longo Prazo]"
+    stakeholder_impact: "[Impacto nos Stakeholders]"
+
+  methodological_contribution:
+    innovation: "[Inovação Metodológica]"
+    applicability: "[Aplicabilidade para Outros Contextos]"
+
+# Introdução e Contexto
+introduction_context:
+  background:
+    problem_statement: "[Declaração do Problema]"
+    brazilian_context: "[Contexto Brasileiro Específico]"
+    policy_relevance: "[Relevância para Políticas]"
+
+  research_gap:
+    existing_literature: "[Literatura Existente]"
+    gaps_identified: "[Lacunas Identificadas]"
+    contribution: "[Contribuição deste Estudo]"
+
+  policy_environment:
+    institutional_framework: "[Marco Institucional Brasileiro]"
+    regulatory_authorities: "[Autoridades Regulatórias Relevantes]"
+    policy_timeline: "[Linha do Tempo da Política]"
+
+# Questão de Pesquisa Causal
+causal_research_question:
+  primary_question: "[Pergunta Causal Principal]"
+  secondary_questions:
+    - question: "[Questão Secundária 1]"
+      relationship: "[Relação com Questão Principal]"
+
+    - question: "[Questão Secundária 2]"
+      relationship: "[Relação com Questão Principal]"
+
+  causal_mechanisms:
+    primary_mechanism: "[Mecanismo Causal Primário]"
+    secondary_mechanisms:
+      - mechanism: "[Mecanismo Secundário 1]"
+        theoretical_basis: "[Base Teórica]"
+
+      - mechanism: "[Mecanismo Secundário 2]"
+        theoretical_basis: "[Base Teórica]"
+
+  expected_effects:
+    direction: "[Direção Esperada do Efeito]"
+    magnitude: "[Magnitude Esperada]"
+    economic_significance: "[Significância Econômica]"
+
+# Estratégia de Identificação
+identification_strategy:
+  chosen_method: "[Método de Identificação Escolhido]"
+  method_justification:
+    theoretical_justification: "[Justificativa Teórica]"
+    empirical_justification: "[Justificativa Empírica]"
+    practical_considerations: "[Considerações Práticas]"
+
+  alternative_methods_considered:
+    - method: "[Método Alternativo 1]"
+      reason_for_rejection: "[Motivo da Rejeição]"
+
+    - method: "[Método Alternativo 2]"
+      reason_for_rejection: "[Motivo da Rejeição]"
+
+  key_assumptions:
+    assumption_1:
+      name: "[Nome da Suposição 1]"
+      description: "[Descrição]"
+      validation_approach: "[Abordagem de Validação]"
+
+    assumption_2:
+      name: "[Nome da Suposição 2]"
+      description: "[Descrição]"
+      validation_approach: "[Abordagem de Validação]"
+
+  threats_to_identification:
+    threat_1:
+      description: "[Descrição da Ameaça 1]"
+      severity: "[Severidade]"
+      mitigation_strategy: "[Estratégia de Mitigação]"
+
+    threat_2:
+      description: "[Descrição da Ameaça 2]"
+      severity: "[Severidade]"
+      mitigation_strategy: "[Estratégia de Mitigação]"
+
+# Dados e Amostra
+data_sample:
+  data_sources:
+    primary_sources:
+      - source: "[Fonte Primária 1]"
+        type: "[Tipo de Dados]"
+        coverage: "[Cobertura]"
+        accessibility: "[Acessibilidade]"
+
+      - source: "[Fonte Primária 2]"
+        type: "[Tipo de Dados]"
+        coverage: "[Cobertura]"
+        accessibility: "[Acessibilidade]"
+
+    secondary_sources:
+      - source: "[Fonte Secundária 1]"
+        type: "[Tipo de Dados]"
+        coverage: "[Cobertura]"
+
+  sample_construction:
+    population: "[População de Interesse]"
+    sampling_frame: "[Quadro Amostral]"
+    sampling_method: "[Método de Amostragem]"
+    sample_size: "[Tamanho da Amostra]"
+    time_period: "[Período de Análise]"
+
+  variables:
+    outcome_variable:
+      name: "[Nome da Variável de Outcome]"
+      definition: "[Definição]"
+      measurement: "[Método de Medição]"
+      unit: "[Unidade]"
+      expected_range: "[Faixa Esperada]"
+
+    treatment_variable:
+      name: "[Nome da Variável de Tratamento]"
+      definition: "[Definição]"
+      measurement: "[Método de Medição]"
+      timing: "[Tempo de Aplicação]"
+
+    control_variables:
+      - name: "[Variável de Controle 1]"
+        reason: "[Razão para Inclusão]"
+        expected_relationship: "[Relação Esperada]"
+
+      - name: "[Variável de Controle 2]"
+        reason: "[Razão para Inclusão]"
+        expected_relationship: "[Relação Esperada]"
+
+    instrumental_variables:
+      - name: "[Variável Instrumental 1]"
+        target_endogenous_variable: "[Variável Endógena Alvo]"
+        relevance_justification: "[Justificativa de Relevância]"
+        exogeneity_justification: "[Justificativa de Exogeneidade]"
+
+  data_quality:
+    completeness: "[Completude dos Dados]"
+    accuracy: "[Precisão]"
+    timeliness: "[Oportunidade]"
+    limitations: "[Limitações dos Dados]"
+
+# Metodologia
+methodology:
+  primary_estimation_method:
+    method_name: "[Nome do Método Principal]"
+    model_specification: "[Especificação do Modelo]"
+    estimation_technique: "[Técnica de Estimação]"
+    software_implementation: "[Implementação em Software]"
+
+  secondary_methods:
+    - method: "[Método Secundário 1]"
+      purpose: "[Propósito]"
+      comparison_approach: "[Abordagem de Comparação]"
+
+    - method: "[Método Secundário 2]"
+      purpose: "[Propósito]"
+      comparison_approach: "[Abordagem de Comparação]"
+
+  robustness_checks:
+    specification_tests:
+      - test: "[Teste de Especificação 1]"
+        purpose: "[Propósito]"
+
+      - test: "[Teste de Especificação 2]"
+        purpose: "[Propósito]"
+
+    sample_sensitivity:
+      - approach: "[Abordagem 1]"
+        rationale: "[Racional]"
+
+      - approach: "[Abordagem 2]"
+        rationale: "[Racional]"
+
+    placebo_tests:
+      - test: "[Teste Placebo 1]"
+        implementation: "[Implementação]"
+
+      - test: "[Teste Placebo 2]"
+        implementation: "[Implementação]"
+
+# Implementação em R (Preferencial)
+r_implementation:
+  required_packages:
+    - "tidyverse"
+    - "AER"
+    - "ivreg"
+    - "did"
+    - "synth"
+    - "rdrobust"
+    - "MatchIt"
+    - "fixest"
+    - "sandwich"
+    - "lmtest"
+
+  data_preparation_code: |
+    # Data preparation for causal inference
+    library(tidyverse)
+    library(lubridate)
+
+    # Load Brazilian data
+    causal_data <- read_csv("data/brazilian_policy_data.csv") %>%
+      mutate(
+        date = ymd(date),
+        year = year(date),
+        month = month(date),
+        quarter = quarter(date),
+
+        # Create treatment indicators
+        treatment_date = as.Date("[Data de Implementação da Política]"),
+        post_policy = date >= treatment_date,
+        treatment = if_else(unit_id %in% treated_units, 1, 0),
+        treated_post = treatment * post_policy,
+
+        # Brazilian-specific controls
+        region = factor(region),
+        state = factor(state),
+        sector = factor(sector),
+
+        # Macroeconomic controls
+        gdp_growth = get_gdp_growth(date),
+        inflation_rate = get_inflation(date),
+        selic_rate = get_selic_rate(date),
+        exchange_rate = get_exchange_rate(date),
+
+        # Time relative to treatment
+        time_to_treatment = as.numeric(date - treatment_date) / 30
+      ) %>%
+      filter(!is.na(outcome_variable))
+
+  main_estimation_code: |
+    # Main causal inference method
+    library(fixest)
+    library(did)
+
+    # Difference-in-Differences (primary method)
+    did_model <- att_gt(
+      yname = "outcome_variable",
+      gname = "treatment",
+      tname = "date",
+      data = causal_data,
+      control_group = "notyettreated",
+      bstrap = TRUE,
+      cband = TRUE
+    )
+
+    # Fixed effects with cluster-robust standard errors
+    fe_model <- feols(
+      outcome_variable ~ treatment + gdp_growth + inflation_rate + exchange_rate |
+      unit_id + year + quarter,
+      data = causal_data,
+      vcov = ~unit_id
+    )
+
+    # Event study for dynamic effects
+    event_study <- aggte(did_model, type = "dynamic")
+
+  instrumental_variables_code: |
+    # Instrumental variables approach (if needed)
+    library(AER)
+
+    # First stage
+    first_stage <- lm(treatment_variable ~ instrument + control1 + control2,
+                      data = causal_data)
+
+    # Second stage
+    iv_model <- ivreg(outcome_variable ~ treatment_variable + control1 + control2 |
+                     instrument + control1 + control2,
+                     data = causal_data)
+
+    # Diagnostic tests
+    first_stage_f <- summary(first_stage)$fstatistic[1]
+    weak_instrument_test <- waldtest(iv_model)
+    overid_test <- ivreg::sargan(iv_model)
+
+  matching_code: |
+    # Matching methods (alternative approach)
+    library(MatchIt)
+
+    # Propensity score matching
+    match_obj <- matchit(
+      treatment ~ control1 + control2 + control3,
+      data = causal_data,
+      method = "nearest",
+      ratio = 1,
+      distance = "glm",
+      link = "logit"
+    )
+
+    matched_data <- match.data(match_obj)
+
+    # Estimate treatment effect on matched sample
+    matched_model <- lm(
+      outcome_variable ~ treatment + control1 + control2 + control3,
+      data = matched_data,
+      weights = weights
+    )
+
+  synthetic_control_code: |
+    # Synthetic control method (for case studies)
+    library(synth)
+
+    # Data preparation for synthetic control
+    dataprep_out <- dataprep(
+      foo = causal_data,
+      dependent = "outcome_variable",
+      unit.variable = "unit_id",
+      time.variable = "date",
+      special.predictors = list(
+        list("gdp_growth", 1, "mean"),
+        list("inflation_rate", 1, "mean")
+      ),
+      treatment.identifier = "[ID da Unidade Tratada]",
+      controls.identifier = "[IDs das Unidades de Controle]",
+      time.optimize.ssr = pre_treatment_period,
+      time.plot = full_period
+    )
+
+    # Run synthetic control
+    synth_out <- synth(dataprep_out)
+
+    # Calculate treatment effects
+    path_effects <- synth.tables(doop = dataprep_out, synth = synth_out)
+
+  robustness_checks_code: |
+    # Robustness checks
+    # Alternative specifications
+    robust_models <- list(
+      baseline = fe_model,
+      log_linear = feols(log(outcome_variable) ~ treatment + controls | unit + year,
+                         data = causal_data),
+      with_state_trends = feols(outcome_variable ~ treatment + controls | unit + year + unit:year,
+                                data = causal_data)
+    )
+
+    # Placebo tests
+    placebo_dates <- generate_placebo_dates(causal_data)
+    placebo_results <- list()
+
+    for (placebo_date in placebo_dates) {
+      placebo_data <- causal_data
+      placebo_data$placebo_treatment <- if_else(
+        placebo_data$date >= placebo_date & placebo_data$treatment == 1,
+        1, 0
+      )
+
+      placebo_model <- feols(
+        outcome_variable ~ placebo_treatment + controls | unit + year,
+        data = placebo_data,
+        vcov = ~unit_id
+      )
+
+      placebo_results[[as.character(placebo_date)]] <- placebo_model
+    }
+
+  heterogeneity_analysis_code: |
+    # Heterogeneity analysis
+    # Regional effects
+    regional_effects <- causal_data %>%
+      group_by(region) %>%
+      group_modify(~ {
+        feols(outcome_variable ~ treatment + controls | unit_id + year,
+              data = .x,
+              vcov = ~unit_id)
+      })
+
+    # Sectoral effects
+    sectoral_effects <- causal_data %>%
+      group_by(sector) %>%
+      group_modify(~ {
+        feols(outcome_variable ~ treatment + controls | unit_id + year,
+              data = .x,
+              vcov = ~unit_id)
+      })
+
+    # Dynamic effects (event study)
+    event_data <- causal_data %>%
+      mutate(
+        event_time = case_when(
+          time_to_treatment >= -12 & time_to_treatment < -6 ~ "-12 to -6",
+          time_to_treatment >= -6 & time_to_treatment < 0 ~ "-6 to 0",
+          time_to_treatment >= 0 & time_to_treatment < 6 ~ "0 to 6",
+          time_to_treatment >= 6 & time_to_treatment < 12 ~ "6 to 12",
+          TRUE ~ "other"
+        )
+      )
+
+    event_model <- feols(
+      outcome_variable ~ factor(event_time) + controls | unit_id + year,
+      data = event_data %>% filter(event_time != "other"),
+      vcov = ~unit_id
+    )
+
+# Resultados Principais
+main_results:
+  primary_estimates:
+    method_1_main:
+      estimate: "[Estimativa Principal]"
+      standard_error: "[Erro Padrão]"
+      p_value: "[Valor-p]"
+      confidence_interval: "[Intervalo de Confiança 95%]"
+      economic_significance: "[Significância Econômica]"
+
+    method_2_robustness:
+      estimate: "[Estimativa de Robustez]"
+      standard_error: "[Erro Padrão]"
+      p_value: "[Valor-p]"
+      confidence_interval: "[Intervalo de Confiança 95%]"
+
+  heterogeneity_results:
+    regional_heterogeneity:
+      region: "[Região 1]"
+        estimate: "[Estimativa]"
+        standard_error: "[Erro Padrão]"
+        interpretation: "[Interpretação]"
+
+      region: "[Região 2]"
+        estimate: "[Estimativa]"
+        standard_error: "[Erro Padrão]"
+        interpretation: "[Interpretação]"
+
+    sectoral_heterogeneity:
+      sector: "[Setor 1]"
+        estimate: "[Estimativa]"
+        standard_error: "[Erro Padrão]"
+        interpretation: "[Interpretação]"
+
+    temporal_heterogeneity:
+      period: "[Período 1]"
+        estimate: "[Estimativa]"
+        standard_error: "[Erro Padrão]"
+        interpretation: "[Interpretação]"
+
+  dynamic_effects:
+    pre_trends:
+      period: "[Período Pré-Tratamento]"
+        estimate: "[Estimativa]"
+        significance: "[Significância]"
+        interpretation: "[Interpretação]"
+
+    post_effects:
+      period: "[Período Pós-Tratamento]"
+        estimate: "[Estimativa]"
+        significance: "[Significância]"
+        interpretation: "[Interpretação]"
+
+# Validação de Suposições
+assumption_validation:
+  parallel_trends_test:
+    test_method: "[Método de Teste]"
+    test_result: "[Resultado do Teste]"
+    p_value: "[Valor-p]"
+    conclusion: "[Conclusão]"
+
+  placebo_tests:
+    test_type: "[Tipo de Teste Placebo]"
+    results: "[Resultados]"
+    conclusion: "[Conclusão]"
+
+  falsification_tests:
+    test_description: "[Descrição do Teste de Falsificação]"
+    results: "[Resultados]"
+    conclusion: "[Conclusão]"
+
+  balance_tests:
+    covariate_balance:
+      covariate: "[Variável de Controle 1]"
+        mean_treated: "[Média Tratados]"
+        mean_control: "[Média Controle]"
+        difference: "[Diferença]"
+        p_value: "[Valor-p]"
+        balanced: "[Balanceado?]"
+
+      covariate: "[Variável de Controle 2]"
+        mean_treated: "[Média Tratados]"
+        mean_control: "[Média Controle]"
+        difference: "[Diferença]"
+        p_value: "[Valor-p]"
+        balanced: "[Balanceado?]"
+
+# Análise de Mecanismos
+mechanism_analysis:
+  proposed_mechanisms:
+    mechanism_1:
+      name: "[Nome do Mecanismo 1]"
+      theoretical_basis: "[Base Teórica]"
+      empirical_test: "[Teste Empírico]"
+      results: "[Resultados]"
+
+    mechanism_2:
+      name: "[Nome do Mecanismo 2]"
+      theoretical_basis: "[Base Teórica]"
+      empirical_test: "[Teste Empírico]"
+      results: "[Resultados]"
+
+  mediation_analysis:
+    mediator_variable: "[Variável Mediadora]"
+    mediation_method: "[Método de Mediação]"
+    direct_effect: "[Efeito Direto]"
+    indirect_effect: "[Efeito Indireto]"
+    total_effect: "[Efeito Total]"
+
+# Análise de Sensibilidade
+sensitivity_analysis:
+  specification_sensitivity:
+    alternative_models:
+      model: "[Modelo Alternativo 1]"
+        estimate: "[Estimativa]"
+        difference_from_main: "[Diferença do Principal]"
+
+      model: "[Modelo Alternativo 2]"
+        estimate: "[Estimativa]"
+        difference_from_main: "[Diferença do Principal]"
+
+  sample_sensitivity:
+    different_samples:
+      sample: "[Amostra 1]"
+        estimate: "[Estimativa]"
+        sample_size: "[Tamanho da Amostra]"
+
+      sample: "[Amostra 2]"
+        estimate: "[Estimativa]"
+        sample_size: "[Tamanho da Amostra]"
+
+  unobserved_confounding:
+    rosenbaum_bounds:
+      gamma: "[Valor de Gamma]"
+      lower_bound: "[Limite Inferior]"
+      upper_bound: "[Limite Superior]"
+      interpretation: "[Interpretação]"
+
+# Implicações para Políticas Brasileiras
+policy_implications:
+  cade_implications:
+    investigative_relevance: "[Relevância para Investigações CADE]"
+    evidentiary_value: "[Valor Probatório]"
+    enforcement_recommendations:
+      - recommendation: "[Recomendação 1]"
+        priority: "[Prioridade]"
+        timeline: "[Cronograma]"
+
+  seae_implications:
+    market_analysis: "[Análise de Mercado]"
+    policy_recommendations:
+      - recommendation: "[Recomendação 1]"
+        impact: "[Impacto Esperado]"
+        feasibility: "[Viabilidade]"
+
+  sectoral_implications:
+    sector_specific_effects:
+      sector: "[Setor 1]"
+        expected_impact: "[Impacto Esperado]"
+        adaptation_needs: "[Necessidades de Adaptação]"
+
+    implementation_considerations:
+      challenge: "[Desafio de Implementação]"
+      mitigation_strategy: "[Estratégia de Mitigação]"
+
+  general_policy_relevance:
+    short_term_actions:
+      - action: "[Ação de Curto Prazo]"
+        urgency: "[Urgência]"
+        responsible_actors: "[Atores Responsáveis]"
+
+    long_term_reforms:
+      - reform: "[Reforma de Longo Prazo]"
+        timeline: "[Cronograma]"
+        resource_requirements: "[Requisitos de Recursos]"
+
+# Limitações
+limitations:
+  data_limitations:
+    measurement_error: "[Erro de Medição]"
+    missing_data: "[Dados Faltantes]"
+    sample_selection: "[Seleção Amostral]"
+
+  methodological_limitations:
+    identification_challenges: "[Desafios de Identificação]"
+    external_validity: "[Validade Externa]"
+    generalizability: "[Generalizabilidade]"
+
+  contextual_limitations:
+    brazilian_specific_factors: "[Fatores Específicos do Brasil]"
+    institutional_constraints: "[Restrições Institucionais]"
+    political_economy: "[Economia Política]"
+
+# Conclusões e Pesquisa Futura
+conclusions_future_research:
+  main_conclusions:
+    conclusion_1:
+      statement: "[Conclusão Principal 1]"
+      evidence: "[Evidência de Apoio]"
+      confidence_level: "[Nível de Confiança]"
+
+    conclusion_2:
+      statement: "[Conclusão Principal 2]"
+      evidence: "[Evidência de Apoio]"
+      confidence_level: "[Nível de Confiança]"
+
+  theoretical_contributions:
+    contribution_1:
+      description: "[Descrição da Contribuição 1]"
+      implications: "[Implicações Teóricas]"
+
+    contribution_2:
+      description: "[Descrição da Contribuição 2]"
+      implications: "[Implicações Teóricas]"
+
+  policy_contributions:
+    policy_contribution_1:
+      description: "[Descrição da Contribuição de Política 1]"
+      stakeholders: "[Stakeholders Afetados]"
+
+    policy_contribution_2:
+      description: "[Descrição da Contribuição de Política 2]"
+      stakeholders: "[Stakeholders Afetados]"
+
+  future_research_directions:
+    methodological_improvements:
+      improvement: "[Melhoria Metodológica 1]"
+      rationale: "[Racional]"
+
+      improvement: "[Melhoria Metodológica 2]"
+      rationale: "[Racional]"
+
+    empirical_extensions:
+      extension: "[Extensão Empírica 1]"
+      data_requirements: "[Requisitos de Dados]"
+
+      extension: "[Extensão Empírica 2]"
+      data_requirements: "[Requisitos de Dados]"
+
+# Apêndice Técnico
+technical_appendix:
+  additional_results:
+    robustness_tables: "[Tabelas de Robustez Adicionais]"
+    heterogeneity_tables: "[Tabelas de Heterogeneidade Detalhadas]"
+    mechanism_tests: "[Testes de Mecanismos Adicionais]"
+
+  data_appendix:
+    variable_construction: "[Construção de Variáveis]"
+    cleaning_procedures: "[Procedimentos de Limpeza]"
+    missing_data_analysis: "[Análise de Dados Faltantes]"
+
+  code_appendix:
+    complete_scripts: "[Scripts R Completo com Comentários em Inglês]"
+    data_processing: "[Código de Processamento de Dados]"
+    analysis_code: "[Código de Análise]"
+    visualization_code: "[Código de Visualização]"
+
+---
+# Instruções de Uso
+
+## Como Utilizar Este Template
+
+1. **Preencha os campos entre colchetes** `[ ]` com informações específicas
+2. **Use R como linguagem preferencial** para implementação de inferência causal
+3. **Mantenha comentários em inglês** no código fonte
+4. **Forneça relatórios em português brasileiro**
+5. **Inclua validação robusta de suposições** causais
+6. **Considere o contexto institucional brasileiro** na análise
+
+## Padrões Técnicos
+
+- **Linguagem:** Português para relatórios, inglês para código
+- **Software:** R preferencialmente para métodos econométricos tradicionais
+- **Validação:** Múltiplos métodos e testes de robustez
+- **Transparência:** Código reprodutível e documentação completa
+- **Contexto:** Análise sensível ao contexto brasileiro específico

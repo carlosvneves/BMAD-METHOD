@@ -1,0 +1,577 @@
+# Template de Relatório de Previsão Econômica
+# Para Mercados Brasileiros e Análise de Concorrência
+
+template_info:
+  name: "Economic Forecast Report Template"
+  version: "1.0"
+  author: "Econometrician Agent - Brazilian Antitrust Analytics"
+  description: "Template para relatórios de previsão econômica com foco em indicadores brasileiros"
+  language: "pt-BR"
+  created_date: "2024-01-01"
+  last_updated: "2024-01-01"
+
+# Metadados do Relatório
+report_metadata:
+  title: "[Título da Previsão Econômica]"
+  subtitle: "[Subtítulo com Escopo Geográfico/Setorial]"
+  author: "[Nome do Analista/Instituição]"
+  organization: "[Organização]"
+  date: "[Data de Emissão]"
+  report_id: "[ID do Relatório]"
+  classification: "[Classificação - Confidencial, Público, etc.]"
+  forecast_period: "[Período da Previsão]"
+  update_frequency: "[Frequência de Atualização]"
+
+# Resumo Executivo
+executive_summary:
+  key_findings:
+    - finding: "[Principal Descoberta 1]"
+      magnitude: "[Magnitude do Efeito]"
+      confidence: "[Nível de Confiança]"
+
+    - finding: "[Principal Descoberta 2]"
+      magnitude: "[Magnitude do Efeito]"
+      confidence: "[Nível de Confiança]"
+
+  economic_outlook:
+    short_term: "[Perspectiva de Curto Prazo]"
+    medium_term: "[Perspectiva de Médio Prazo]"
+    key_risks: "[Principais Riscos Identificados]"
+
+  policy_implications:
+    monetary_policy: "[Implicações para Política Monetária]"
+    fiscal_policy: "[Implicações para Política Fiscal]"
+    regulatory_implications: "[Implicações Regulatórias]"
+
+# Contexto Econômico Brasileiro
+brazilian_context:
+  macroeconomic_environment:
+    gdp_outlook: "[Perspectiva do PIB]"
+    inflation_outlook: "[Perspectiva da Inflação]"
+    interest_rates: "[Perspectiva das Taxas de Juros]"
+    exchange_rate: "[Perspectiva da Taxa de Câmbio]"
+    fiscal_position: "[Posição Fiscal]"
+
+  sectoral_context:
+    sector_name: "[Nome do Setor em Análise]"
+    sector_size: "[Tamanho do Setor]"
+    market_structure: "[Estrutura de Mercado]"
+    key_players: "[Principais Jogadores]"
+    regulatory_framework: "[Marco Regulatório]"
+
+  recent_developments:
+    policy_changes: "[Mudanças de Política Recentes]"
+    market_events: "[Eventos de Mercado Relevantes]"
+    external_shocks: "[Choques Externos]"
+
+# Dados e Metodologia
+data_methodology:
+  data_sources:
+    primary_sources:
+      - source: "[Fonte Primária 1 - ex: IBGE]"
+        frequency: "[Frequência]"
+        coverage: "[Cobertura]"
+        quality: "[Qualidade dos Dados]"
+
+      - source: "[Fonte Primária 2 - ex: BACEN]"
+        frequency: "[Frequência]"
+        coverage: "[Cobertura]"
+        quality: "[Qualidade dos Dados]"
+
+    secondary_sources:
+      - source: "[Fonte Secundária 1]"
+        frequency: "[Frequência]"
+        coverage: "[Cobertura]"
+
+  data_characteristics:
+    time_period: "[Período dos Dados]"
+    frequency: "[Frequência dos Dados]"
+    geographic_coverage: "[Cobertura Geográfica]"
+    data_quality: "[Avaliação da Qualidade]"
+    missing_data_handling: "[Tratamento de Dados Faltantes]"
+
+  forecasting_methodology:
+    primary_method: "[Método Principal - ex: ARIMA, VAR, etc.]"
+    secondary_methods:
+      - method: "[Método Secundário 1]"
+        weight: "[Peso na Combinação]"
+
+      - method: "[Método Secundário 2]"
+        weight: "[Peso na Combinação]"
+
+    combination_approach: "[Método de Combinação de Previsões]"
+    software_used: "[Software - R preferencialmente]"
+
+# Análise de Séries Temporais
+time_series_analysis:
+  variable_analysis:
+    variable_name: "[Nome da Variável Principal]"
+    unit: "[Unidade de Medida]"
+
+    descriptive_statistics:
+      mean: "[Média]"
+      median: "[Mediana]"
+      std_dev: "[Desvio Padrão]"
+      min: "[Mínimo]"
+      max: "[Máximo]"
+      skewness: "[Assimetria]"
+      kurtosis: "[Curtose]"
+
+    decomposition:
+      trend: "[Análise de Tendência]"
+      seasonal: "[Análise Sazonal]"
+      cyclical: "[Análise Cíclica]"
+      irregular: "[Componente Irregular]"
+
+  stationarity_analysis:
+    tests_performed:
+      - test: "Augmented Dickey-Fuller (ADF)"
+        result: "[Resultado]"
+        conclusion: "[Conclusão]"
+
+      - test: "KPSS"
+        result: "[Resultado]"
+        conclusion: "[Conclusão]"
+
+      - test: "Phillips-Perron (PP)"
+        result: "[Resultado]"
+        conclusion: "[Conclusão]"
+
+    conclusion: "[Conclusão sobre Estacionaridade]"
+
+  nonlinearity_analysis:
+    tests_performed:
+      - test: "Terasvirta Neural Network Test"
+        result: "[Resultado]"
+        significance: "[Significância]"
+
+      - test: "White Neural Network Test"
+        result: "[Resultado]"
+        significance: "[Significância]"
+
+    conclusion: "[Conclusão sobre Não Linearidade]"
+
+  long_memory_analysis:
+    hurst_exponent: "[Expoente de Hurst]"
+    fractal_dimension: "[Dimensão Fractal]"
+    conclusion: "[Conclusão sobre Memória Longa]"
+
+# Modelos de Previsão
+forecasting_models:
+  model_1_arima:
+    model_specification: "[Especificação ARIMA]"
+    estimation_method: "[Método de Estimação]"
+    model_selection_criteria: "[Critério de Seleção - AIC/BIC]"
+    diagnostic_tests:
+      ljung_box: "[Resultado do Teste Ljung-Box]"
+      jarque_bera: "[Resultado do Teste Jarque-Bera]"
+      engle_arch: "[Resultado do Teste ARCH]"
+    forecast_performance:
+      mae: "[Erro Absoluto Médio]"
+      rmse: "[Erro Quadrático Médio]"
+      mape: "[Erro Percentual Absoluto Médio]"
+      mase: "[Escala Média Absoluta de Erro]"
+
+  model_2_var:
+    model_specification: "[Especificação VAR]"
+    lag_length: "[Comprimento do Lag]"
+    variables: "[Variáveis Incluídas]"
+    diagnostic_tests:
+      portmanteau: "[Teste de Portmanteau]"
+      normality: "[Teste de Normalidade]"
+      heteroskedasticity: "[Teste de Heterocedasticidade]"
+    forecast_performance:
+      mae: "[Erro Absoluto Médio]"
+      rmse: "[Erro Quadrático Médio]"
+      mape: "[Erro Percentual Absoluto Médio]"
+
+  model_3_machine_learning:
+    model_type: "[Tipo de Modelo ML - ex: XGBoost, Random Forest]"
+    feature_engineering: "[Engenharia de Features]"
+    hyperparameter_tuning: "[Otimização de Hiperparâmetros]"
+    cross_validation: "[Validação Cruzada]"
+    forecast_performance:
+      mae: "[Erro Absoluto Médio]"
+      rmse: "[Erro Quadrático Médio]"
+      mape: "[Erro Percentual Absoluto Médio]"
+
+# Implementação em R (Preferencial)
+r_implementation:
+  required_packages:
+    - "forecast"
+    - "vars"
+    - "tseries"
+    - "urca"
+    - "xts"
+    - "tidyverse"
+    - "prophet"
+    - "xgboost"
+    - "randomForest"
+    - "caret"
+
+  data_preparation_code: |
+    # Load and prepare Brazilian economic data
+    library(tidyverse)
+    library(lubridate)
+    library(xts)
+
+    # Load data from Brazilian sources
+    brazilian_data <- read_csv("data/brazilian_economic_data.csv") %>%
+      mutate(
+        date = ymd(date),
+        year = year(date),
+        month = month(date),
+        quarter = quarter(date),
+        # Brazilian calendar effects
+        is_carnival = is_carnival_period(date),
+        is_election_year = is_election_year(date)
+      ) %>%
+      arrange(date)
+
+    # Convert to time series object
+    ts_data <- xts(brazilian_data[, -1], order.by = brazilian_data$date)
+
+  time_series_analysis_code: |
+    # Comprehensive time series analysis
+    library(forecast)
+    library(urca)
+    library(tseries)
+
+    # Stationarity tests - multiple approach
+    adf_test <- ur.df(ts_data$variable, type = "drift", selectlags = "AIC")
+    kpss_test <- ur.kpss(ts_data$variable, type = "mu")
+    pp_test <- ur.pp(ts_data$variable)
+
+    # Decomposition
+    decomp <- stl(ts_data$variable, s.window = "periodic")
+    plot(decomp)
+
+    # Non-linearity testing
+    library(tseries)
+    terasvirta_test <- terasvirta.test(ts_data$variable)
+    white_test <- white.test(ts_data$variable)
+
+  model_estimation_code: |
+    # ARIMA modeling
+    arima_model <- auto.arima(ts_data$variable,
+                             stepwise = FALSE,
+                             approximation = FALSE,
+                             seasonal = TRUE)
+
+    # VAR modeling for multivariate forecasting
+    library(vars)
+    var_data <- ts_data[, c("variable1", "variable2", "variable3")]
+    var_select <- VARselect(var_data, type = "const")
+    var_model <- VAR(var_data, p = var_select$selection["SC(n)"])
+
+    # Machine learning integration
+    library(xgboost)
+    library(caret)
+
+    # Create features for ML
+    create_features <- function(ts_data, lags = 12) {
+      n <- nrow(ts_data)
+      features <- data.frame(target = ts_data$variable)
+
+      for (lag in 1:lags) {
+        features[[paste0("lag_", lag)]] <- c(rep(NA, lag), ts_data$variable[1:(n-lag)])
+      }
+
+      # Calendar features
+      features$month <- month(index(ts_data))
+      features$quarter <- quarter(index(ts_data))
+      features$year <- year(index(ts_data))
+
+      return(features)
+    }
+
+    features_df <- create_features(ts_data)
+    features_df <- features_df[complete.cases(features_df), ]
+
+    # Train XGBoost model
+    xgb_model <- xgboost(
+      data = as.matrix(features_df[, -1]),
+      label = features_df$target,
+      nrounds = 100,
+      objective = "reg:squarederror"
+    )
+
+  forecast_combination_code: |
+    # Forecast combination
+    forecast_horizon <- 12
+
+    # Generate individual forecasts
+    arima_forecast <- forecast(arima_model, h = forecast_horizon)
+    var_forecast <- predict(var_model, n.ahead = forecast_horizon)
+
+    # ML forecast
+    xgb_forecast <- predict(xgb_model,
+                           newdata = create_future_features(ts_data, forecast_horizon))
+
+    # Combine forecasts using weighted average
+    weights <- c(0.4, 0.3, 0.3)  # ARIMA, VAR, XGBoost
+    combined_forecast <- weights[1] * arima_forecast$mean +
+                       weights[2] * var_forecast$fcst[, 1] +
+                       weights[3] * xgb_forecast
+
+    # Calculate prediction intervals
+    prediction_intervals <- calculate_prediction_intervals(
+      forecasts = list(arima = arima_forecast,
+                     var = var_forecast,
+                     xgb = xgb_forecast),
+      weights = weights,
+      confidence_level = 0.95
+    )
+
+  visualization_code: |
+    # Visualization of forecasts
+    library(ggplot2)
+    library(plotly)
+
+    # Create forecast plot
+    forecast_df <- data.frame(
+      date = seq(max(index(ts_data)) + 1,
+                 length.out = forecast_horizon,
+                 by = "month"),
+      forecast = combined_forecast,
+      lower_ci = prediction_intervals$lower,
+      upper_ci = prediction_intervals$upper
+    )
+
+    p <- ggplot() +
+      geom_line(data = fortify(ts_data),
+                aes(x = Index, y = variable),
+                color = "blue", size = 1) +
+      geom_line(data = forecast_df,
+                aes(x = date, y = forecast),
+                color = "red", size = 1, linetype = "dashed") +
+      geom_ribbon(data = forecast_df,
+                  aes(x = date, ymin = lower_ci, ymax = upper_ci),
+                  alpha = 0.2, fill = "red") +
+      labs(title = "Previsão Econômica - Brasil",
+           x = "Data", y = "Valor",
+           subtitle = "Combinação de Modelos com Intervalos de Confiança") +
+      theme_minimal()
+
+    # Convert to interactive plot
+    interactive_plot <- ggplotly(p)
+
+# Previsões e Cenários
+forecasts_scenarios:
+  baseline_forecast:
+    forecast_values:
+      - period: "[Período 1]"
+        point_estimate: "[Estimativa Pontual]"
+        lower_ci: "[Limite Inferior 95%]"
+        upper_ci: "[Limite Superior 95%]"
+
+      - period: "[Período 2]"
+        point_estimate: "[Estimativa Pontual]"
+        lower_ci: "[Limite Inferior 95%]"
+        upper_ci: "[Limite Superior 95%]"
+
+    key_assumptions:
+      - "[Pressuposto 1]"
+      - "[Pressuposto 2]"
+      - "[Pressuposto 3]"
+
+  alternative_scenarios:
+    optimistic_scenario:
+      description: "[Descrição do Cenário Otimista]"
+      key_drivers: "[Fatores Impulsionadores]"
+      probability: "[Probabilidade %]"
+      forecast_adjustment: "[Ajuste na Previsão]"
+
+    pessimistic_scenario:
+      description: "[Descrição do Cenário Pessimista]"
+      key_drivers: "[Fatores Impulsionadores]"
+      probability: "[Probabilidade %]"
+      forecast_adjustment: "[Ajuste na Previsão]"
+
+    high_inflation_scenario:
+      description: "[Descrição do Cenário de Alta Inflação]"
+      key_drivers: "[Fatores Impulsionadores]"
+      probability: "[Probabilidade %]"
+      forecast_adjustment: "[Ajuste na Previsão]"
+
+# Análise de Incerteza
+uncertainty_analysis:
+  forecast_uncertainty:
+    sources_of_uncertainty:
+      - source: "[Fonte de Incerteza 1]"
+        impact: "[Impacto na Previsão]"
+        mitigation: "[Estratégia de Mitigação]"
+
+      - source: "[Fonte de Incerteza 2]"
+        impact: "[Impacto na Previsão]"
+        mitigation: "[Estratégia de Mitigação]"
+
+    risk_factors:
+      - factor: "[Fator de Risco 1]"
+        likelihood: "[Probabilidade]"
+        impact: "[Impacto Potencial]"
+        mitigation: "[Mitigação]"
+
+      - factor: "[Fator de Risco 2]"
+        likelihood: "[Probabilidade]"
+        impact: "[Impacto Potencial]"
+        mitigation: "[Mitigação]"
+
+  model_uncertainty:
+    model_comparison:
+      model: "[Modelo 1]"
+      performance: "[Desempenho]"
+      weight: "[Peso na Combinação]"
+
+      model: "[Modelo 2]"
+      performance: "[Desempenho]"
+      weight: "[Peso na Combinação]"
+
+    sensitivity_analysis:
+      parameter: "[Parâmetro 1]"
+      base_value: "[Valor Base]"
+      range: "[Intervalo]"
+      impact_on_forecast: "[Impacto na Previsão]"
+
+# Validação e Desempenho
+validation_performance:
+  historical_performance:
+    time_period: "[Período Histórico]"
+    sample_size: "[Tamanho da Amostra]"
+
+    performance_metrics:
+      metric: "Mean Absolute Error (MAE)"
+      value: "[Valor]"
+      benchmark: "[Referência]"
+
+      metric: "Root Mean Squared Error (RMSE)"
+      value: "[Valor]"
+      benchmark: "[Referência]"
+
+      metric: "Mean Absolute Percentage Error (MAPE)"
+      value: "[Valor]"
+      benchmark: "[Referência]"
+
+  out_of_sample_validation:
+    validation_period: "[Período de Validação]"
+    method: "[Método de Validação]"
+
+    validation_results:
+      metric: "[Métrica 1]"
+      in_sample: "[Resultado In-Sample]"
+      out_of_sample: "[Resultado Out-of-Sample]"
+      ratio: "[Razão]"
+
+  model_comparison:
+    comparison_method: "[Método de Comparação]"
+    winning_model: "[Modelo Vencedor]"
+    improvement_over_benchmark: "[Melhoria sobre Referência]"
+
+# Implicações Políticas e Recomendações
+policy_implications:
+  monetary_policy_implications:
+    interest_rate_outlook: "[Perspectiva de Taxas de Juros]"
+    inflation_targeting: "[Metas de Inflação]"
+    recommendations:
+      - recommendation: "[Recomendação 1]"
+        rationale: "[Racional]"
+        timeline: "[Cronograma]"
+
+  fiscal_policy_implications:
+    budgetary_impact: "[Impacto Orçamentário]"
+    tax_revenue_outlook: "[Perspectiva de Receita Fiscal]"
+    spending_recommendations: "[Recomendações de Gastos]"
+
+  sectoral_implications:
+    sector_specific_impacts:
+      sector: "[Setor 1]"
+        expected_impact: "[Impacto Esperado]"
+        adaptation_needs: "[Necessidades de Adaptação]"
+
+      sector: "[Setor 2]"
+        expected_impact: "[Impacto Esperado]"
+        adaptation_needs: "[Necessidades de Adaptação]"
+
+  regulatory_recommendations:
+    short_term_actions:
+      - action: "[Ação de Curto Prazo]"
+        urgency: "[Urgência]"
+        responsible_parties: "[Partes Responsáveis]"
+
+    long_term_strategies:
+      - strategy: "[Estratégia de Longo Prazo]"
+        timeline: "[Cronograma]"
+        resources_required: "[Recursos Necessários]"
+
+# Limitações e Restrições
+limitations:
+  data_limitations:
+    availability: "[Disponibilidade de Dados]"
+    timeliness: "[Oportunidade dos Dados]"
+    quality_issues: "[Problemas de Qualidade]"
+
+  methodological_limitations:
+    model_assumptions: "[Suposições do Modelo]"
+    structural_breaks: "[Quebras Estruturais]"
+    external_factors: "[Fatores Externos]"
+
+  contextual_limitations:
+    brazilian_specific_challenges: "[Desafios Específicos do Brasil]"
+    institutional_factors: "[Fatores Institucionais]"
+    political_uncertainty: "[Incerteza Política]"
+
+# Apêndice Técnico
+technical_appendix:
+  detailed_methodology:
+    model_specifications: "[Especificações Detalhadas dos Modelos]"
+    estimation_procedures: "[Procedimentos de Estimação]"
+    validation_techniques: "[Técnicas de Validação]"
+
+  data_appendix:
+    data_dictionary: "[Dicionário de Dados]"
+    sources_documentation: "[Documentação de Fontes]"
+    cleaning_procedures: "[Procedimentos de Limpeza]"
+
+  code_appendix:
+    r_scripts: "[Scripts R Completo com Comentários em Inglês]"
+    data_processing: "[Código de Processamento]"
+    analysis_code: "[Código de Análise]"
+
+# Referências
+references:
+  theoretical_foundations:
+    - citation: "[Citação Teórica 1]"
+      relevance: "[Relevância]"
+
+  methodological_references:
+    - citation: "[Referência Metodológica 1]"
+      method: "[Método]"
+
+  brazilian_context:
+    - citation: "[Referência Brasileira 1]"
+      context: "[Contexto]"
+
+  data_sources:
+    - source: "[Fonte de Dados 1]"
+      url: "[URL]"
+      access_date: "[Data de Acesso]"
+
+---
+# Instruções de Uso
+
+## Como Utilizar Este Template
+
+1. **Preencha os campos entre colchetes** `[ ]` com informações específicas
+2. **Use R como linguagem preferencial** para implementação de previsões
+3. **Mantenha comentários em inglês** no código fonte
+4. **Forneça relatórios em português brasileiro**
+5. **Inclua múltiplos testes de estacionaridade** e não linearidade
+6. **Considere contextos brasileiros específicos** na análise
+
+## Padrões Técnicos
+
+- **Linguagem:** Português para relatórios, inglês para código
+- **Software:** R preferencialmente, Python para ML quando necessário
+- **Validação:** Validação cruzada completa e análise de sensibilidade
+- **Documentação:** Código bem documentado com exemplos reprodutíveis
+- **Contexto:** Análise contextualizada para o ambiente econômico brasileiro

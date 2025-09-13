@@ -1,0 +1,435 @@
+# Template de Especificação de Modelo Econométrico
+# Para Análise de Mercado Brasileiro e Detecção de Cartéis
+
+template_info:
+  name: "Econometric Model Specification Template"
+  version: "1.0"
+  author: "Econometrician Agent - Brazilian Antitrust Analytics"
+  description: "Template para especificação detalhada de modelos econométricos com foco em contexto brasileiro"
+  language: "pt-BR"
+  created_date: "2024-01-01"
+  last_updated: "2024-01-01"
+
+# Metadados do Projeto
+project_metadata:
+  title: "[Título do Projeto]"
+  author: "[Nome do Analista/Instituição]"
+  date: "[Data de Criação]"
+  version: "[Versão do Modelo]"
+  confidentiality: "[Nível de Confidencialidade]"
+  stakeholders: "[Lista de Stakeholders]"
+  objective: "[Objetivo Principal da Análise]"
+
+# Contexto Brasileiro
+brazilian_context:
+  economic_sector: "[Setor Econômico]"
+  geographic_scope: "[Escopo Geográfico]"
+  time_period: "[Período de Análise]"
+  institutional_framework: "[Marco Institucional Relevante]"
+  regulatory_authority: "[Autoridade Regulatória (CADE, SEAE, etc.)]"
+  data_sources_brazilian:
+    - "[Fonte de Dados 1 - ex: IBGE, BACEN, etc.]"
+    - "[Fonte de Dados 2]"
+    - "[Fonte de Dados 3]"
+
+# Dados e Amostra
+data_specification:
+  data_type: "[Tipo de Dados - Cross-section, Painel, Séries Temporais]"
+  unit_of_analysis: "[Unidade de Análise]"
+  sample_size: "[Tamanho da Amostra]"
+  time_frequency: "[Frequência Temporal]"
+  geographic_coverage: "[Cobertura Geográfica]"
+  data_collection_method: "[Método de Coleta]"
+
+variables:
+  dependent_variable:
+    name: "[Nome da Variável Dependente]"
+    definition: "[Definição Clara]"
+    measurement: "[Como é Medida]"
+    unit: "[Unidade de Medida]"
+    expected_range: "[Faixa Esperada de Valores]"
+    transformation: "[Transformações Aplicadas]"
+
+  independent_variables:
+    - name: "[Variável Independente 1]"
+      definition: "[Definição]"
+      measurement: "[Medição]"
+      expected_sign: "[Sinal Esperado (+/-)]"
+      theoretical_justification: "[Justificativa Teórica]"
+      data_source: "[Fonte de Dados]"
+
+    - name: "[Variável Independente 2]"
+      definition: "[Definição]"
+      measurement: "[Medição]"
+      expected_sign: "[Sinal Esperado (+/-)]"
+      theoretical_justification: "[Justificativa Teórica]"
+      data_source: "[Fonte de Dados]"
+
+  control_variables:
+    - name: "[Variável de Controle 1]"
+      reason_for_inclusion: "[Razão para Inclusão]"
+      expected_effect: "[Efeito Esperado]"
+
+    - name: "[Variável de Controle 2]"
+      reason_for_inclusion: "[Razão para Inclusão]"
+      expected_effect: "[Efeito Esperado]"
+
+  instrumental_variables:
+    - name: "[Variável Instrumental 1]"
+      target_endogenous_variable: "[Variável Endógena Alvo]"
+      relevance_justification: "[Justificativa de Relevância]"
+      exogeneity_justification: "[Justificativa de Exogeneidade]"
+      exclusion_restriction: "[Restrição de Exclusão]"
+
+# Especificação do Modelo
+model_specification:
+  model_type: "[Tipo de Modelo - OLS, IV, DiD, RD, etc.]"
+  functional_form: "[Forma Funcional - Linear, Log-linear, etc.]"
+  equation: "[Equação Matemática do Modelo]"
+  estimation_method: "[Método de Estimação]"
+  software_preference: "[R, Python, Stata - preferencialmente R]"
+
+  identification_strategy:
+    causal_question: "[Pergunta Causal]"
+    identification_method: "[Método de Identificação]"
+    key_assumptions:
+      - "[Suposição 1]"
+      - "[Suposição 2]"
+      - "[Suposição 3]"
+    threats_to_identification:
+      - "[Ameaça 1]"
+      - "[Ameaça 2]"
+    mitigation_strategies:
+      - "[Estratégia 1]"
+      - "[Estratégia 2]"
+
+# Testes de Diagnóstico
+diagnostic_tests:
+  stationarity_tests:
+    test_type: "[Tipo de Teste - ADF, KPSS, PP, etc.]"
+    significance_level: "[Nível de Significância]"
+    expected_result: "[Resultado Esperado]"
+
+  heteroskedasticity_tests:
+    test_type: "[Tipo de Teste - White, Breusch-Pagan, etc.]"
+    significance_level: "[Nível de Significância]"
+    correction_method: "[Método de Correção]"
+
+  autocorrelation_tests:
+    test_type: "[Tipo de Teste - Durbin-Watson, etc.]"
+    significance_level: "[Nível de Significância]"
+    correction_method: "[Método de Correção]"
+
+  multicollinearity_tests:
+    test_type: "[VIF, Condition Number, etc.]"
+    threshold: "[Limite Aceitável]"
+    correction_method: "[Método de Correção]"
+
+  normality_tests:
+    test_type: "[Shapiro-Wilk, Jarque-Bera, etc.]"
+    significance_level: "[Nível de Significância]"
+
+  robustness_checks:
+    - alternative_specifications: "[Especificações Alternativas]"
+    - sub_sample_analysis: "[Análise de Subamostras]"
+    - placebo_tests: "[Testes Placebo]"
+    - sensitivity_analysis: "[Análise de Sensibilidade]"
+
+# Implementação em R (Preferencial)
+r_implementation:
+  required_packages:
+    - "tidyverse"
+    - "AER"
+    - "plm"
+    - "fixest"
+    - "sandwich"
+    - "lmtest"
+    - "urca"
+    - "vars"
+    - "forecast"
+
+  data_loading_code: |
+    # Load Brazilian data
+    library(tidyverse)
+    library(lubridate)
+
+    # Load main dataset
+    data <- read_csv("path/to/brazilian_data.csv") %>%
+      mutate(
+        date = ymd(date),
+        # Brazilian-specific date handling
+        year = year(date),
+        month = month(date),
+        quarter = quarter(date),
+        region = factor(region),
+        # Add Brazilian calendar effects
+        is_carnival = is_carnival_period(date),
+        is_election_year = is_election_year(date)
+      ) %>%
+      filter(!is.na(main_outcome_variable))
+
+  model_estimation_code: |
+    # Model estimation using R (preferred for econometrics)
+    library(fixest)
+
+    # Fixed effects model with cluster-robust standard errors
+    main_model <- feols(
+      outcome_variable ~ treatment_variable + control_variable1 + control_variable2 |
+      unit_id + year + quarter,
+      data = data,
+      vcov = ~unit_id  # Cluster by unit
+    )
+
+    # For IV models
+    iv_model <- feols(
+      outcome_variable ~ 1 | control_variable1 + control_variable2 |
+      unit_id + year,
+      data = data,
+      vcov = ~unit_id
+    )
+
+    # For time series analysis
+    library(vars)
+    library(urca)
+
+    # Stationarity testing - multiple test approach
+    adf_test <- ur.df(data$variable, type = "drift", lags = 12)
+    kpss_test <- ur.kpss(data$variable, type = "mu")
+
+    # VAR model for understanding relationships
+    var_data <- data %>%
+      select(variable1, variable2, variable3) %>%
+      na.omit()
+
+    var_model <- VAR(var_data, p = 2, type = "const")
+
+  diagnostic_code: |
+    # Diagnostic testing
+    library(lmtest)
+    library(sandwich)
+
+    # Extract residuals
+    residuals <- residuals(main_model)
+
+    # Breusch-Pagan test for heteroskedasticity
+    bp_test <- bptest(main_model)
+
+    # Durbin-Watson test for autocorrelation
+    dw_test <- dwtest(main_model)
+
+    # Normality test
+    jarque_bera_test <- jarque.bera.test(residuals)
+
+    # VIF for multicollinearity
+    library(car)
+    vif_values <- vif(main_model)
+
+  robustness_code: |
+    # Robustness checks
+    # Alternative specifications
+    robustness_models <- list(
+      log_linear = feols(log(outcome_variable) ~ treatment_variable + controls | unit + year, data = data),
+      with_interactions = feols(outcome_variable ~ treatment_variable*region + controls | unit + year, data = data),
+      state_trends = feols(outcome_variable ~ treatment_variable + controls | unit + year + unit:year, data = data)
+    )
+
+    # Subsample analysis
+    subsample_results <- list()
+    regions <- unique(data$region)
+    for (region in regions) {
+      region_data <- data[data$region == region, ]
+      subsample_models[[region]] <- feols(
+        outcome_variable ~ treatment_variable + controls | unit + year,
+        data = region_data,
+        vcov = ~unit_id
+      )
+    }
+
+# Análise de Não Linearidade (Avançado)
+nonlinear_analysis:
+  test_for_nonlinearity: true
+  nonlinearity_tests:
+    - test_type: "Terasvirta Neural Network Test"
+      r_package: "tseries"
+      significance_level: 0.05
+    - test_type: "White Neural Network Test"
+      r_package: "tseries"
+      significance_level: 0.05
+    - test_type: "Keenan Test"
+      r_package: "tseries"
+      significance_level: 0.05
+    - test_type: "McLeod-Li Test"
+      r_package: "tseries"
+      significance_level: 0.05
+
+  causal_inference_advanced:
+    transfer_entropy: true
+    convergence_cross_mapping: true
+    r_packages:
+      - "RTransferEntropy"
+      - "rEDM"
+      - "nonlinearTseries"
+
+# Análise de Heterogeneidade
+heterogeneity_analysis:
+  dimensions:
+    - dimension: "Regional"
+      groups: ["Norte", "Nordeste", "Sudeste", "Sul", "Centro-Oeste"]
+      interaction_term: "treatment_variable * region"
+
+    - dimension: "Setorial"
+      groups: ["Setor 1", "Setor 2", "Setor 3"]
+      interaction_term: "treatment_variable * sector"
+
+    - dimension: "Tamanho"
+      groups: ["Pequenas", "Médias", "Grandes"]
+      interaction_term: "treatment_variable * size_category"
+
+    - dimension: "Tempo"
+      groups: ["Curto Prazo", "Médio Prazo", "Longo Prazo"]
+      analysis_method: "event_study"
+
+# Validação e Qualidade
+validation_quality:
+  internal_validity:
+    parallel_trends_assumption: "[Validação de Tendências Paralelas]"
+    spillover_effects: "[Controle para Efeitos de Spillover]"
+    attrition_analysis: "[Análise de Atrito]"
+
+  external_validity:
+    generalizability: "[Análise de Generalização]"
+    transportability: "[Transportabilidade para outros contextos]"
+
+  construct_validity:
+    measurement_validity: "[Validade da Medição]"
+    face_validity: "[Validade Aparente]"
+
+# Resultados Esperados
+expected_results:
+  primary_outcome:
+    variable: "[Variável de Resultado Principal]"
+    expected_direction: "[Direção Esperada]"
+    expected_magnitude: "[Magnitude Esperada]"
+    economic_significance: "[Significância Econômica]"
+
+  secondary_outcomes:
+    - outcome: "[Resultado Secundário 1]"
+      expected_direction: "[Direção]"
+      justification: "[Justificativa]"
+
+    - outcome: "[Resultado Secundário 2]"
+      expected_direction: "[Direção]"
+      justification: "[Justificativa]"
+
+# Implicações para Políticas Brasileiras
+policy_implications:
+  cade_implications:
+    relevance_to_investigations: "[Relevância para Investigações CADE]"
+    evidentiary_value: "[Valor Probatório]"
+    recommended_actions: "[Ações Recomendadas]"
+
+  seae_implications:
+    market_analysis: "[Análise de Mercado]"
+    policy_recommendations: "[Recomendações de Política]"
+    monitoring_suggestions: "[Sugestões de Monitoramento]"
+
+  sectoral_implications:
+    sector_specific_effects: "[Efeitos Específicos por Setor]"
+    regulatory_changes: "[Mudanças Regulatórias Sugeridas]"
+    implementation_timeline: "[Cronograma de Implementação]"
+
+# Limitações e Restrições
+limitations:
+  data_limitations:
+    availability: "[Disponibilidade de Dados]"
+    quality: "[Qualidade dos Dados]"
+    coverage: "[Cobertura dos Dados]"
+    measurement_error: "[Erro de Medição]"
+
+  methodological_limitations:
+    identification_challenges: "[Desafios de Identificação]"
+    assumption_violations: "[Violações de Suposições]"
+    external_validity: "[Validade Externa]"
+
+  contextual_limitations:
+    brazilian_specific: "[Específico do Contexto Brasileiro]"
+    institutional_factors: "[Fatores Institucionais]"
+    temporal_factors: "[Fatores Temporais]"
+
+# Cronograma e Recursos
+timeline_resources:
+  data_collection_period: "[Período de Coleta de Dados]"
+  analysis_period: "[Período de Análise]"
+  validation_period: "[Período de Validação]"
+  reporting_period: "[Período de Relatório]"
+
+  required_resources:
+    software: "[Software Necessário - R preferencialmente]"
+    computing_power: "[Poder Computacional]"
+    expertise_required: "[Expertise Necessária]"
+    data_access: "[Acesso a Dados]"
+
+# Referências e Bibliografia
+references:
+  theoretical_foundations:
+    - citation: "[Citação Teórica 1]"
+      relevance: "[Relevância]"
+    - citation: "[Citação Teórica 2]"
+      relevance: "[Relevância]"
+
+  methodological_references:
+    - citation: "[Referência Metodológica 1]"
+      method_used: "[Método Utilizado]"
+    - citation: "[Referência Metodológica 2]"
+      method_used: "[Método Utilizado]"
+
+  brazilian_context:
+    - citation: "[Referência Brasileira 1]"
+      context: "[Contexto]"
+    - citation: "[Referência Brasileira 2]"
+      context: "[Contexto]"
+
+# Apêndice Técnico
+technical_appendix:
+  data_appendix:
+    data_dictionary: "[Dicionário de Dados]"
+    cleaning_procedures: "[Procedimentos de Limpeza]"
+    missing_data_handling: "[Tratamento de Dados Faltantes]"
+
+  code_appendix:
+    r_scripts: "[Scripts R com Comentários em Inglês]"
+    data_processing: "[Código de Processamento de Dados]"
+    analysis_scripts: "[Scripts de Análise]"
+
+  robustness_appendix:
+    additional_tests: "[Testes Adicionais]"
+    sensitivity_analysis: "[Análise de Sensibilidade Detalhada]"
+    alternative_specifications: "[Especificações Alternativas]"
+
+# Notas Finais
+final_notes:
+  ethical_considerations: "[Considerações Éticas]"
+  replication_package: "[Pacote de Reprodução]"
+  contact_information: "[Informações de Contato]"
+  disclaimers: "[Disclaimers Importantes]"
+
+---
+# Instruções de Uso
+
+## Como Utilizar Este Template
+
+1. **Preencha os campos entre colchetes** `[ ]` com informações específicas do seu projeto
+2. **Adapte as seções** conforme necessário para seu contexto específico
+3. **Use R como linguagem preferencial** para implementação econométrica
+4. **Mantenha comentários em inglês** no código fonte
+5. **Forneça relatórios e análise em português brasileiro**
+6. **Inclua testes abrangentes de não linearidade** quando aplicável
+7. **Considere o contexto institucional brasileiro** na análise
+
+## Padrões Recomendados
+
+- **Linguagem:** Português brasileiro para relatórios, inglês para código
+- **Software:** R preferencialmente, Python para ML e integrações complexas
+- **Testes:** Múltiplos testes de estacionaridade e não linearidade
+- **Validação:** Análise de robustez completa com múltiplas especificações
+- **Contexto:** Sempre considerar o contexto brasileiro específico

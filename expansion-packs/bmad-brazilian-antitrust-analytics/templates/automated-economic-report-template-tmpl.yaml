@@ -1,0 +1,813 @@
+# Template de Relatório Econômico Automatizado
+# Para Geração Automatizada de Relatórios Econômicos Brasileiros
+
+template_info:
+  name: "Automated Economic Report Template"
+  version: "1.0"
+  author: "Econometrician Agent - Brazilian Antitrust Analytics"
+  description: "Template para geração automatizada de relatórios econômicos com foco brasileiro"
+  language: "pt-BR"
+  created_date: "2024-01-01"
+  last_updated: "2024-01-01"
+
+# Metadados do Relatório Automatizado
+report_metadata:
+  title: "[Título do Relatório Econômico]"
+  subtitle: "[Subtítulo com Contexto Brasileiro]"
+  report_type: "[Tipo de Relatório - Mensal, Trimestral, Anual, etc.]"
+  reporting_period: "[Período de Relatório]"
+  generation_date: "[Data de Geração]"
+  generated_by: "[Sistema/Agente Gerador]"
+  version: "[Versão do Relatório]"
+  classification: "[Classificação]"
+  distribution_list: "[Lista de Distribuição]"
+
+# Configuração de Automação
+automation_config:
+  data_sources:
+    primary_sources:
+      - source: "[Fonte de Dados Primária 1]"
+        api_endpoint: "[Endpoint API]"
+        update_frequency: "[Frequência de Atualização]"
+        data_format: "[Formato de Dados]"
+        authentication: "[Método de Autenticação]"
+
+      - source: "[Fonte de Dados Primária 2]"
+        api_endpoint: "[Endpoint API]"
+        update_frequency: "[Frequência de Atualização]"
+        data_format: "[Formato de Dados]"
+        authentication: "[Método de Autenticação]"
+
+    secondary_sources:
+      - source: "[Fonte de Dados Secundária 1]"
+        url: "[URL]"
+        scraping_method: "[Método de Web Scraping]"
+        update_frequency: "[Frequência de Atualização]"
+
+  processing_pipeline:
+    data_collection:
+      method: "[Método de Coleta]"
+      schedule: "[Agendamento]"
+      error_handling: "[Tratamento de Erros]"
+      retry_policy: "[Política de Nova Tentativa]"
+
+    data_transformation:
+      cleaning_rules: "[Regras de Limpeza]"
+      validation_checks: "[Verificações de Validação]"
+      enrichment_sources: "[Fontes de Enriquecimento]"
+
+    analysis_engine:
+      models_used: "[Modelos Utilizados]"
+      update_frequency: "[Frequência de Atualização]"
+      performance_monitoring: "[Monitoramento de Desempenho]"
+
+  reporting_schedule:
+    generation_frequency: "[Frequência de Geração]"
+    distribution_method: "[Método de Distribuição]"
+    notification_system: "[Sistema de Notificação]"
+    archive_retention: "[Retenção de Arquivo]"
+
+# Estrutura do Relatório
+report_structure:
+  executive_summary:
+    required_elements:
+      - element: "Principais Descobertas"
+        automated: true
+        source: "analysis_results"
+
+      - element: "Evolução Recente"
+        automated: true
+        source: "time_series_analysis"
+
+      - element: "Perspectivas"
+        automated: true
+        source: "forecasting_results"
+
+    visualizations:
+      - type: "Gráfico de Evolução"
+        automated: true
+        source: "main_time_series"
+
+      - type: "Indicadores Principais"
+        automated: true
+        source: "key_indicators"
+
+  market_overview:
+    sections:
+      - section: "Ambiente Macroeconômico"
+        automated: true
+        data_sources: ["macro_data"]
+        analysis_methods: ["descriptive_statistics", "trend_analysis"]
+
+      - section: "Setor em Foco"
+        automated: true
+        data_sources: ["sector_data"]
+        analysis_methods: ["sector_analysis", "competitor_analysis"]
+
+      - section: "Contexto Regulatório"
+        automated: true
+        data_sources: ["regulatory_data"]
+        analysis_methods: ["regulatory_tracking"]
+
+  detailed_analysis:
+    time_series_analysis:
+      automated: true
+      variables:
+        - variable: "[Variável 1]"
+          frequency: "[Frequência]"
+          decomposition: true
+          forecasting: true
+
+        - variable: "[Variável 2]"
+          frequency: "[Frequência]"
+          decomposition: true
+          forecasting: true
+
+      methods:
+        - method: "Análise de Tendência"
+          automated: true
+
+        - method: "Análise Sazonal"
+          automated: true
+
+        - method: "Testes de Estacionaridade"
+          automated: true
+
+    competitor_analysis:
+      automated: true
+      metrics:
+        - metric: "Participação de Mercado"
+          calculation: "[Método de Cálculo]"
+          source: "[Fonte de Dados]"
+
+        - metric: "Preços Relativos"
+          calculation: "[Método de Cálculo]"
+          source: "[Fonte de Dados]"
+
+        - metric: "Capacidade Instalada"
+          calculation: "[Método de Cálculo]"
+          source: "[Fonte de Dados]"
+
+    risk_assessment:
+      automated: true
+      risk_categories:
+        - category: "Riscos Macroeconômicos"
+          indicators: ["Indicador 1", "Indicador 2"]
+          scoring_method: "[Método de Pontuação]"
+
+        - category: "Riscos Setoriais"
+          indicators: ["Indicador 1", "Indicador 2"]
+          scoring_method: "[Método de Pontuação]"
+
+        - category: "Riscos Regulatórios"
+          indicators: ["Indicador 1", "Indicador 2"]
+          scoring_method: "[Método de Pontuação]"
+
+  forecasts_and_outlook:
+    baseline_forecast:
+      automated: true
+      horizon: "[Horizonte de Previsão]"
+      methods:
+        - method: "[Método 1]"
+          weight: "[Peso]"
+
+        - method: "[Método 2]"
+          weight: "[Peso]"
+
+      confidence_intervals: true
+      scenario_analysis: true
+
+    alternative_scenarios:
+      automated: true
+      scenarios:
+        - scenario: "Cenário Otimista"
+          probability: "[Probabilidade]"
+          key_assumptions: "[Suposições Principais]"
+
+        - scenario: "Cenário Pessimista"
+          probability: "[Probabilidade]"
+          key_assumptions: "[Suposições Principais]"
+
+        - scenario: "Cenário de Base"
+          probability: "[Probabilidade]"
+          key_assumptions: "[Suposições Principais]"
+
+# Configuração de Visualização
+visualization_config:
+  chart_types:
+    time_series_charts:
+      - type: "Linha Simples"
+        use_case: "Evolução Temporal"
+        color_scheme: "brazilian_colors"
+        annotations: true
+
+      - type: "Área Empilhada"
+        use_case: "Composição de Mercado"
+        color_scheme: "sector_colors"
+        annotations: true
+
+    comparison_charts:
+      - type: "Barra Horizontal"
+        use_case: "Comparação entre Entidades"
+        color_scheme: "performance_colors"
+        annotations: true
+
+      - type: "Scatter Plot"
+        use_case: "Correlação entre Variáveis"
+        color_scheme: "correlation_colors"
+        annotations: true
+
+    distribution_charts:
+      - type: "Histograma"
+        use_case: "Distribuição de Dados"
+        color_scheme: "distribution_colors"
+        annotations: true
+
+      - type: "Box Plot"
+        use_case: "Comparação de Distribuições"
+        color_scheme: "comparison_colors"
+        annotations: true
+
+  color_schemes:
+    brazilian_colors:
+      primary: "#009C3B"  # Verde brasileiro
+      secondary: "#FFDF00"  # Amarelo brasileiro
+      accent: "#002776"     # Azul brasileiro
+      neutral: "#F5F5F5"    # Cinza claro
+
+    sector_colors:
+      sector_1: "#1F77B4"
+      sector_2: "#FF7F0E"
+      sector_3: "#2CA02C"
+      sector_4: "#D62728"
+      sector_5: "#9467BD"
+
+  interactive_elements:
+    tooltips: true
+    zoom_controls: true
+    filter_controls: true
+    export_options: true
+
+# Sistema de Alertas
+alert_system:
+  alert_triggers:
+    trigger_1:
+      name: "[Nome do Gatilho 1]"
+      condition: "[Condição]"
+      threshold: "[Limite]"
+      severity: "[Severidade]"
+
+    trigger_2:
+      name: "[Nome do Gatilho 2]"
+      condition: "[Condição]"
+      threshold: "[Limite]"
+      severity: "[Severidade]"
+
+  alert_channels:
+    channel_1:
+      type: "[Tipo de Canal - Email, SMS, etc.]"
+      recipients: "[Destinatários]"
+      format: "[Formato]"
+
+    channel_2:
+      type: "[Tipo de Canal]"
+      recipients: "[Destinatários]"
+      format: "[Formato]"
+
+  alert_content:
+    template: "[Template de Alerta]"
+    include_data: true
+    include_recommendations: true
+
+# Implementação em R (Preferencial)
+r_implementation:
+  required_packages:
+    - "tidyverse"
+    - "lubridate"
+    - "xts"
+    - "forecast"
+    - "prophet"
+    - "plotly"
+    - "DT"
+    - "rmarkdown"
+    - "shiny"
+    - "httr"
+    - "jsonlite"
+    - "xml2"
+
+  automated_data_collection_code: |
+    # Automated data collection for Brazilian economic data
+    library(tidyverse)
+    library(lubridate)
+    library(httr)
+    library(jsonlite)
+
+    # Function to collect data from Brazilian sources
+    collect_brazilian_data <- function(report_date) {
+      all_data <- list()
+
+      # IBGE data
+      ibge_data <- collect_ibge_data(report_date)
+      all_data$ibge <- ibge_data
+
+      # BACEN data
+      bacen_data <- collect_bacen_data(report_date)
+      all_data$bacen <- bacen_data
+
+      # IPEA data
+      ipea_data <- collect_ipea_data(report_date)
+      all_data$ipea <- ipea_data
+
+      # Sector-specific data
+      sector_data <- collect_sector_data(report_date)
+      all_data$sector <- sector_data
+
+      return(all_data)
+    }
+
+    collect_ibge_data <- function(date) {
+      # API call to IBGE
+      base_url <- "https://servicodados.ibge.gov.br/api/v3"
+      endpoints <- list(
+        pib = "/agregados/valor/6784",
+        ipca = "/agregados/valor/1736",
+        emprego = "/agregados/valor/6389"
+      )
+
+      data_list <- list()
+      for (endpoint_name in names(endpoints)) {
+        url <- paste0(base_url, endpoints[[endpoint_name]])
+        response <- GET(url)
+        if (http_status(response)$status == 200) {
+          data_list[[endpoint_name]] <- fromJSON(content(response, "text"))
+        }
+      }
+
+      return(data_list)
+    }
+
+    collect_bacen_data <- function(date) {
+      # API call to BACEN
+      base_url <- "https://api.bcb.gov.br/dados/serie/bcdata.sgs"
+
+      series <- list(
+        selic = "4189",      # Selic rate
+        dolar = "1",         # USD/BRL
+        igpm = "189",       # IGP-M
+        reservas = "13621"   # International reserves
+      )
+
+      data_list <- list()
+      for (series_name in names(series)) {
+        series_id <- series[[series_name]]
+        url <- paste0(base_url, ".", series_id, "/dados?formato=json")
+        response <- GET(url)
+
+        if (http_status(response)$status == 200) {
+          raw_data <- fromJSON(content(response, "text"))
+          processed_data <- raw_data %>%
+            map_df(~ data.frame(
+              date = ymd(.x$data),
+              value = as.numeric(.x$valor),
+              stringsAsFactors = FALSE
+            )) %>%
+            filter(date <= date) %>%
+            arrange(desc(date))
+
+          data_list[[series_name]] <- processed_data
+        }
+      }
+
+      return(data_list)
+    }
+
+  automated_analysis_code: |
+    # Automated economic analysis
+    automated_economic_analysis <- function(data, report_date) {
+      results <- list()
+
+      # Time series analysis
+      results$time_series <- analyze_time_series(data, report_date)
+
+      # Market analysis
+      results$market <- analyze_market_structure(data, report_date)
+
+      # Risk assessment
+      results$risk <- assess_risks(data, report_date)
+
+      # Forecasting
+      results$forecast <- generate_forecasts(data, report_date)
+
+      # Alert generation
+      results$alerts <- generate_alerts(results, report_date)
+
+      return(results)
+    }
+
+    analyze_time_series <- function(data, report_date) {
+      library(forecast)
+      library(urca)
+      library(tseries)
+
+      analysis_results <- list()
+
+      for (series_name in names(data$bacen)) {
+        ts_data <- data$bacen[[series_name]]
+
+        # Basic statistics
+        stats <- list(
+          mean = mean(ts_data$value, na.rm = TRUE),
+          median = median(ts_data$value, na.rm = TRUE),
+          std_dev = sd(ts_data$value, na.rm = TRUE),
+          min = min(ts_data$value, na.rm = TRUE),
+          max = max(ts_data$value, na.rm = TRUE)
+        )
+
+        # Stationarity tests
+        adf_test <- adf.test(ts_data$value)
+        kpss_test <- kpss.test(ts_data$value)
+
+        # Trend analysis
+        trend_model <- lm(value ~ as.numeric(date), data = ts_data)
+        trend_coefficient <- coef(trend_model)[2]
+        trend_significance <- summary(trend_model)$coefficients[2, 4]
+
+        # Seasonality analysis (if monthly data)
+        if (nrow(ts_data) >= 24) {
+          decomposition <- stl(ts(ts_data$value, frequency = 12), s.window = "periodic")
+          seasonal_strength <- var(decomposition$time.series[, "seasonal"]) / var(ts_data$value)
+        } else {
+          seasonal_strength <- NA
+        }
+
+        analysis_results[[series_name]] <- list(
+          statistics = stats,
+          stationarity = list(adf = adf_test, kpss = kpss_test),
+          trend = list(coefficient = trend_coefficient, p_value = trend_significance),
+          seasonality = seasonal_strength,
+          last_observation = tail(ts_data$value, 1)
+        )
+      }
+
+      return(analysis_results)
+    }
+
+    analyze_market_structure <- function(data, report_date) {
+      # Market concentration analysis
+      market_data <- data$sector$market_shares
+
+      if (!is.null(market_data)) {
+        # Calculate concentration indices
+        total_market <- sum(market_data$market_share)
+        market_data$share_pct <- market_data$market_share / total_market * 100
+
+        # HHI calculation
+        hhi <- sum(market_data$share_pct^2)
+
+        # Concentration ratio (CR4)
+        cr4 <- sum(head(sort(market_data$share_pct, decreasing = TRUE), 4))
+
+        market_analysis <- list(
+          hhi = hhi,
+          cr4 = cr4,
+          concentration_level = ifelse(hhi > 2500, "High",
+                                      ifelse(hhi > 1500, "Moderate", "Low")),
+          top_firms = head(arrange(market_data, desc(market_share_pct), 5)
+        )
+      } else {
+        market_analysis <- list(
+          hhi = NA,
+          cr4 = NA,
+          concentration_level = "Data not available",
+          top_firms = NULL
+        )
+      }
+
+      return(market_analysis)
+    }
+
+    assess_risks <- function(data, report_date) {
+      risk_assessment <- list()
+
+      # Macroeconomic risks
+      macro_risks <- list()
+      selic_data <- data$bacen$selic
+      inflation_data <- data$bacen$igpm
+      exchange_data <- data$bacen$dolar
+
+      if (!is.null(selic_data)) {
+        selic_change <- (tail(selic_data$value, 1) - selic_data$value[nrow(selic_data)-1]) /
+          selic_data$value[nrow(selic_data)-1] * 100
+
+        macro_risks$interest_rate_volatility <- abs(selic_change) > 0.5  # 0.5% threshold
+      }
+
+      if (!is.null(inflation_data)) {
+        inflation_rate <- (tail(inflation_data$value, 1) - inflation_data$value[nrow(inflation_data)-1]) /
+          inflation_data$value[nrow(inflation_data)-1] * 100 * 12  # Annualize
+
+        macro_risks$high_inflation <- inflation_rate > 10  # 10% threshold
+      }
+
+      risk_assessment$macroeconomic <- macro_risks
+
+      return(risk_assessment)
+    }
+
+    generate_forecasts <- function(data, report_date, horizon = 6) {
+      library(forecast)
+      library(prophet)
+
+      forecasts <- list()
+
+      for (series_name in names(data$bacen)) {
+        ts_data <- data$bacen[[series_name]]
+
+        if (nrow(ts_data) >= 12) {  # Need at least 12 observations
+          # Convert to time series
+          ts_object <- ts(ts_data$value, frequency = 12)
+
+          # Auto ARIMA forecast
+          arima_forecast <- auto.arima(ts_object, stepwise = FALSE, approximation = FALSE)
+          arima_pred <- forecast(arima_forecast, h = horizon)
+
+          # Prophet forecast (as alternative)
+          prophet_data <- data.frame(
+            ds = ts_data$date,
+            y = ts_data$value
+          )
+
+          prophet_model <- prophet(prophet_data)
+          prophet_future <- make_future_dataframe(prophet_model, periods = horizon)
+          prophet_pred <- predict(prophet_model, prophet_future)
+
+          forecasts[[series_name]] <- list(
+            arima = arima_pred,
+            prophet = prophet_pred,
+            combined = (arima_pred$mean + prophet_pred$yhat) / 2,  # Simple average
+            horizon = horizon,
+            last_actual = tail(ts_data$value, 1)
+          )
+        }
+      }
+
+      return(forecasts)
+    }
+
+    generate_alerts <- function(analysis_results, report_date) {
+      alerts <- list()
+
+      # Check for significant changes
+      time_series <- analysis_results$time_series
+
+      for (series_name in names(time_series)) {
+        series_result <- time_series[[series_name]]
+
+        # Alert for significant trend changes
+        if (!is.na(series_result$trend$p_value) && series_result$trend$p_value < 0.05) {
+          alerts[[paste0("trend_change_", series_name)]] <- list(
+            type = "Trend Change Alert",
+            series = series_name,
+            severity = ifelse(abs(series_result$trend$coefficient) > 0.1, "High", "Medium"),
+            message = paste("Significant trend detected in", series_name),
+            recommendation: "Monitor closely and investigate causes"
+          )
+        }
+
+        # Alert for volatility spikes
+        if (!is.na(series_result$statistics$std_dev)) {
+          volatility_threshold <- series_result$statistics$std_dev * 2
+          last_observation <- series_result$last_observation
+          mean_observation <- series_result$statistics$mean
+
+          if (abs(last_observation - mean_observation) > volatility_threshold) {
+            alerts[[paste0("volatility_spike_", series_name)]] <- list(
+              type = "Volatility Spike Alert",
+              series = series_name,
+              severity = "High",
+              message: paste("Unusual volatility detected in", series_name),
+              recommendation: "Investigate potential causes and market impacts"
+            )
+          }
+        }
+      }
+
+      return(alerts)
+    }
+
+  automated_report_generation_code: |
+    # Automated report generation
+    generate_automated_report <- function(analysis_results, report_date, config) {
+      library(rmarkdown)
+      library(plotly)
+      library(DT)
+
+      # Create report content
+      report_content <- create_report_content(analysis_results, report_date)
+
+      # Generate visualizations
+      visualizations <- create_automated_visualizations(analysis_results)
+
+      # Create interactive elements
+      interactive_elements <- create_interactive_elements(analysis_results)
+
+      # Compile final report
+      final_report <- compile_automated_report(report_content, visualizations,
+                                               interactive_elements, config)
+
+      return(final_report)
+    }
+
+    create_automated_visualizations <- function(results) {
+      visualizations <- list()
+
+      # Time series visualization
+      if (!is.null(results$time_series)) {
+        ts_plots <- list()
+        for (series_name in names(results$time_series)) {
+          series_data <- results$bacen[[series_name]]
+
+          p <- plot_ly(series_data, x = ~date, y = ~value, type = 'scatter', mode = 'lines',
+                       name = series_name) %>%
+            layout(title = paste("Evolução de", series_name),
+                   xaxis = list(title = "Data"),
+                   yaxis = list(title = "Valor"))
+
+          ts_plots[[series_name]] <- p
+        }
+        visualizations$time_series <- ts_plots
+      }
+
+      # Market structure visualization
+      if (!is.null(results$market)) {
+        market_data <- results$market$top_firms
+
+        if (!is.null(market_data)) {
+          market_plot <- plot_ly(market_data, x = ~company, y = ~share_pct,
+                                  type = 'bar', name = 'Market Share') %>%
+            layout(title = "Participação de Mercado - Top Firmas",
+                   xaxis = list(title = "Empresa"),
+                   yaxis = list(title = "Participação (%)"))
+
+          visualizations$market_structure <- market_plot
+        }
+      }
+
+      # Forecast visualization
+      if (!is.null(results$forecast)) {
+        forecast_plots <- list()
+        for (series_name in names(results$forecast)) {
+          forecast_data <- results$forecast[[series_name]]
+
+          if (!is.null(forecast_data)) {
+            # Create forecast visualization
+            historical_data <- results$bacen[[series_name]]
+            forecast_dates <- seq(max(historical_data$date) + 1,
+                                  length.out = forecast_data$horizon,
+                                  by = "month")
+
+            forecast_df <- data.frame(
+              date = forecast_dates,
+              forecast = forecast_data$combined,
+              lower_ci = forecast_data$arima$lower[, 1],
+              upper_ci = forecast_data$arima$upper[, 1]
+            )
+
+            p <- plot_ly() %>%
+              add_lines(data = historical_data, x = ~date, y = ~value,
+                        name = 'Histórico', line = list(color = 'blue')) %>%
+              add_lines(data = forecast_df, x = ~date, y = ~forecast,
+                        name = 'Previsão', line = list(color = 'red', dash = 'dash')) %>%
+              add_ribbons(data = forecast_df, x = ~date,
+                          ymin = ~lower_ci, ymax = ~upper_ci,
+                          name = 'Intervalo de Confiança',
+                          fillcolor = 'rgba(255,0,0,0.2)') %>%
+              layout(title = paste("Previsão para", series_name),
+                     xaxis = list(title = "Data"),
+                     yaxis = list(title = "Valor"))
+
+            forecast_plots[[series_name]] <- p
+          }
+        }
+        visualizations$forecasts <- forecast_plots
+      }
+
+      return(visualizations)
+    }
+
+    create_interactive_elements <- function(results) {
+      interactive_elements <- list()
+
+      # Data table with key indicators
+      key_indicators <- extract_key_indicators(results)
+      indicators_table <- DT::datatable(key_indicators,
+                                       options = list(pageLength = 10,
+                                                   searching = TRUE,
+                                                   ordering = TRUE),
+                                       caption = "Indicadores Econômicos Principais")
+
+      interactive_elements$indicators_table <- indicators_table
+
+      # Interactive dashboard elements
+      dashboard_elements <- create_dashboard_elements(results)
+      interactive_elements$dashboard <- dashboard_elements
+
+      return(interactive_elements)
+    }
+
+# Configuração de Distribuição
+distribution_config:
+  output_formats:
+    pdf:
+      enabled: true
+      template: "brazilian_report_template.tex"
+      styling: "professional"
+      interactive: false
+
+    html:
+      enabled: true
+      template: "interactive_dashboard_template.html"
+      styling: "modern"
+      interactive: true
+
+    excel:
+      enabled: true
+      template: "data_export_template.xlsx"
+      styling: "corporate"
+      interactive: false
+
+  distribution_channels:
+    email:
+      enabled: true
+      recipients: "[Lista de Destinatários]"
+      template: "email_notification_template.html"
+      attachments: ["pdf", "excel"]
+
+    web_portal:
+      enabled: true
+      url: "[URL do Portal]"
+      authentication: true
+      access_level: "[Nível de Acesso]"
+
+    api:
+      enabled: true
+      endpoint: "[Endpoint da API]"
+      authentication: "[Método de Autenticação]"
+      rate_limits: "[Limites de Taxa]"
+
+# Configuração de Monitoramento
+monitoring_config:
+  performance_metrics:
+    data_collection_latency:
+      target: "[Alvo de Latência]"
+      alert_threshold: "[Limite de Alerta]"
+
+    report_generation_time:
+      target: "[Alvo de Tempo]"
+      alert_threshold: "[Limite de Alerta]"
+
+    forecast_accuracy:
+      target: "[Alvo de Precisão]"
+      alert_threshold: "[Limite de Alerta]"
+
+  quality_checks:
+    data_completeness:
+      minimum_threshold: "[Limite Mínimo]"
+      alert_action: "[Ação de Alerta]"
+
+    outlier_detection:
+      method: "[Método de Detecção]"
+      threshold: "[Limite]"
+      alert_action: "[Ação de Alerta]"
+
+  logging:
+    level: "[Nível de Log]"
+    retention: "[Período de Retenção]"
+    format: "[Formato de Log]"
+
+---
+# Instruções de Uso
+
+## Como Utilizar Este Template
+
+1. **Configure os parâmetros de automação** nas seções relevantes
+2. **Implemente as funções R** para coleta e análise de dados
+3. **Configure os canais de distribuição** e notificações
+4. **Monitore o desempenho** através do sistema de monitoramento
+5. **Atualize regularmente** os modelos e parâmetros
+
+## Padrões Técnicos
+
+- **Linguagem:** R preferencialmente para automação econômica
+- **Automação:** Coleta, análise e geração de relatórios automatizados
+- **Qualidade:** Monitoramento contínuo de qualidade e desempenho
+- **Documentação:** Código bem documentado e procedimentos claros
+- **Contexto:** Adaptado para fontes de dados brasileiras
+
+## Recomendações de Implementação
+
+- Use **APIs oficiais** para dados brasileiros (IBGE, BACEN, IPEA)
+- Implemente **tratamento de erros** robusto para falhas de conexão
+- Configure **agendamento automático** para atualizações regulares
+- Inclua **validações de qualidade** nos dados coletados
+- Mantenha **documentação atualizada** dos processos automatizados
